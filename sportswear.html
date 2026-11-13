@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>Sportswear Manufacturing & Export | GORSY Sialkot</title>
+  <meta name="description" content="Global OEM & private label manufacturer for custom football kits, teamwear, basketball uniforms, cricket whites, tracksuits, and sports jerseys. In-house 1440 DPI sublimation and precision stitching."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00363d",
+            "secondary": "#b4c5ff",
+            "secondary-container": "#0053db",
+            "tertiary": "#cdff13",
+            "background": "#0a0e14",
+            "surface-midnight": "#0b111c",
+            "surface-container-lowest": "#06090e",
+            "surface-container-low": "#12161e",
+            "surface-container-high": "#222732",
+            "surface-slate": "#1e293b",
+            "border-slate": "#334155",
+            "on-surface": "#dfe2eb",
+            "on-surface-variant": "#bac9cc",
+            "text-muted": "#94a3b8",
+            "text-dim": "#64748b",
+            "pure-white": "#ffffff",
+            "heritage-gold": "#d89c33",
+            "heritage-red": "#c81822"
+          },
+          fontFamily: {
+            "headline": ["Oswald", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "mono": ["Space Grotesk", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body { background-color: #0a0e14; color: #dfe2eb; overflow-x: hidden; }
+    .bg-tech-grid {
+      background-image: linear-gradient(to right, rgba(30, 41, 59, 0.22) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(30, 41, 59, 0.22) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .hover-cyan-glow:hover {
+      border-color: rgba(0, 229, 255, 0.7);
+      box-shadow: 0 8px 30px -4px rgba(0, 229, 255, 0.22);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- GLOBAL HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 flex flex-col bg-surface-midnight/95 backdrop-blur-xl border-b border-surface-slate/60 shadow-xl">
+  <!-- Top Utility Bar -->
+  <div class="w-full bg-surface-container-lowest border-b border-surface-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-8 flex items-center justify-between font-mono text-xs">
+      <div class="flex items-center gap-2 text-on-surface-variant truncate">
+        <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        <span class="uppercase tracking-wider text-text-muted">
+          GORSY Sialkot EPZ Hub <span class="text-border-slate mx-1">•</span> Sportswear Division <span class="text-border-slate mx-1">•</span> Worldwide Air & Sea Freight
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-text-muted">
+        <button onclick="openModal('currencyModal')" class="flex items-center gap-1 text-on-surface-variant hover:text-primary-container transition-colors uppercase font-mono text-xs">
+          <span class="material-symbols-outlined text-sm text-primary">payments</span>
+          <span class="navCurrencyLabel">USD ($)</span>
+          <span class="material-symbols-outlined text-xs">expand_more</span>
+        </button>
+        <span class="hidden sm:inline text-border-slate">|</span>
+        <a href="mailto:chahadmaqsood786@gmail.com" class="hidden sm:flex items-center gap-1 text-on-surface-variant hover:text-primary-container transition-colors font-mono">
+          <span class="material-symbols-outlined text-sm text-primary-container">mail</span>
+          <span>chahadmaqsood786@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between gap-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="flex items-center gap-3 group">
+      <div class="w-10 h-10 rounded-lg bg-surface-container-high border border-primary-container/40 flex items-center justify-center p-1.5 shadow-[0_0_12px_rgba(0,229,255,0.25)] group-hover:border-primary-container transition-all">
+        <span class="material-symbols-outlined text-primary-container text-2xl group-hover:scale-110 transition-transform">apparel</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1.5">
+          <span class="font-headline text-2xl uppercase tracking-wider text-pure-white leading-none font-bold">GORSY</span>
+          <span class="px-1.5 py-0.5 rounded text-[9px] font-mono uppercase bg-primary-container/15 text-primary-container border border-primary-container/30">SPORTSWEAR</span>
+        </div>
+        <span class="font-mono text-[10px] tracking-widest text-text-muted leading-none uppercase mt-1">Sialkot Export Manufacturing</span>
+      </div>
+    </a>
+
+    <!-- Clean Multi-Page Navigation -->
+    <nav class="hidden xl:flex items-center gap-1 lg:gap-1.5 h-full text-xs font-mono uppercase tracking-wider">
+      <a href="index.html" class="h-full inline-flex items-center px-2.5 text-on-surface-variant hover:text-primary-container transition-colors">Home</a>
+      <a href="sportswear.html" class="h-full inline-flex items-center px-2.5 text-primary-container font-bold border-b-2 border-primary-container">Sportswear</a>
+      <a href="activewear.html" class="h-full inline-flex items-center px-2.5 text-on-surface-variant hover:text-primary-container transition-colors">Activewear</a>
+      <a href="schoolwear.html" class="h-full inline-flex items-center px-2.5 text-on-surface-variant hover:text-primary-container transition-colors">Schoolwear</a>
+      <a href="sports-goods.html" class="h-full inline-flex items-center px-2.5 text-on-surface-variant hover:text-primary-container transition-colors">Sports Goods</a>
+      <a href="3d-customizer.html" class="h-full inline-flex items-center gap-1 px-2.5 text-on-surface-variant hover:text-primary-container transition-colors">
+        <span>3D Studio</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+      </a>
+      <a href="manufacturing.html" class="h-full inline-flex items-center px-2.5 text-on-surface-variant hover:text-primary-container transition-colors">Manufacturing</a>
+      <a href="about.html" class="h-full inline-flex items-center px-2.5 text-on-surface-variant hover:text-primary-container transition-colors">About Us</a>
+      <a href="contact.html" class="h-full inline-flex items-center px-2.5 text-on-surface-variant hover:text-primary-container transition-colors">Contact</a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="flex items-center gap-3">
+      <a href="tech-pack.html" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container hover:text-primary-container transition-all font-mono text-xs uppercase tracking-wider">
+        <span class="material-symbols-outlined text-base">description</span>
+        <span>Tech Pack</span>
+      </a>
+      <a href="3d-customizer.html" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-mono text-xs uppercase tracking-wider font-bold shadow-[0_0_16px_rgba(0,229,255,0.4)] hover:bg-primary transition-all">
+        <span class="material-symbols-outlined text-base">view_in_ar</span>
+        <span>Launch 3D</span>
+      </a>
+      <button onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded bg-surface-container-low border border-border-slate text-on-surface hover:text-primary-container">
+        <span id="mobileMenuIcon" class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden xl:hidden w-full bg-surface-midnight/98 border-b border-border-slate/80 shadow-2xl backdrop-blur-2xl px-6 py-6 font-mono text-xs uppercase tracking-wider flex flex-col gap-2">
+    <a href="index.html" class="py-2.5 px-3 rounded hover:bg-surface-slate text-on-surface">Home</a>
+    <a href="sportswear.html" class="py-2.5 px-3 rounded bg-primary-container/10 text-primary-container font-bold">Sportswear Division</a>
+    <a href="activewear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate text-on-surface">Activewear Division</a>
+    <a href="schoolwear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate text-on-surface">Schoolwear Division</a>
+    <a href="sports-goods.html" class="py-2.5 px-3 rounded hover:bg-surface-slate text-on-surface">Sports Goods Division</a>
+    <a href="products.html" class="py-2.5 px-3 rounded hover:bg-surface-slate text-on-surface">All Products Catalog</a>
+    <a href="3d-customizer.html" class="py-2.5 px-3 rounded bg-primary-container/20 text-primary-container flex items-center justify-between">
+      <span>3D Garment Customizer</span>
+      <span class="material-symbols-outlined text-sm">view_in_ar</span>
+    </a>
+    <a href="manufacturing.html" class="py-2.5 px-3 rounded hover:bg-surface-slate text-on-surface">Manufacturing Plant</a>
+    <a href="private-label.html" class="py-2.5 px-3 rounded hover:bg-surface-slate text-on-surface">Private Label OEM</a>
+    <a href="about.html" class="py-2.5 px-3 rounded hover:bg-surface-slate text-on-surface">About Us</a>
+    <a href="contact.html" class="py-2.5 px-3 rounded hover:bg-surface-slate text-on-surface">Contact & Inquiries</a>
+  </div>
+</header>
+
+<main class="pt-28">
+  <!-- BREADCRUMB -->
+  <div class="w-full bg-surface-container-lowest border-b border-border-slate/40 py-2.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-2 font-mono text-xs text-text-dim">
+      <a href="index.html" class="hover:text-primary-container transition-colors">Home</a>
+      <span>/</span>
+      <span class="text-primary-container font-semibold">Sportswear Manufacturing</span>
+    </div>
+  </div>
+
+  <!-- SPORTSWEAR HERO SECTION -->
+  <section class="relative w-full py-20 lg:py-28 overflow-hidden bg-tech-grid border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 flex flex-col gap-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container/10 border border-primary-container/30 text-primary-container font-mono text-xs uppercase tracking-widest w-fit">
+            <span class="material-symbols-outlined text-sm">sports_soccer</span>
+            <span>FIFA & Pro League Grade Sportswear Manufacturing</span>
+          </div>
+
+          <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl uppercase text-pure-white font-bold leading-none tracking-tight">
+            CUSTOM TEAMWEAR & <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-pure-white to-secondary">PRO SPORTS APPAREL</span>
+          </h1>
+
+          <p class="font-body text-base text-text-muted max-w-xl leading-relaxed">
+            From high-velocity football match kits and basketball uniforms to cricket whites and sideline tracksuits. Engineered with 1440 DPI Japanese sublimation printing, 4-needle flatlock seams, and advanced AeroPoly moisture-wicking textiles.
+          </p>
+
+          <!-- Core Capability Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+            <div class="p-3 rounded-lg bg-surface-midnight border border-border-slate/80 flex flex-col gap-1">
+              <span class="font-mono text-xs text-text-dim uppercase">Min. Order (MOQ)</span>
+              <span class="font-headline text-lg text-primary-container font-bold">50 Pieces</span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-midnight border border-border-slate/80 flex flex-col gap-1">
+              <span class="font-mono text-xs text-text-dim uppercase">Sublimation DPI</span>
+              <span class="font-headline text-lg text-tertiary font-bold">1440 DPI Mimaki</span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-midnight border border-border-slate/80 flex flex-col gap-1 col-span-2 sm:col-span-1">
+              <span class="font-mono text-xs text-text-dim uppercase">Production Turnaround</span>
+              <span class="font-headline text-lg text-pure-white font-bold">12–14 Days</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#inquiryForm" class="px-7 py-4 rounded-lg bg-primary-container text-on-primary-container font-mono text-xs uppercase tracking-wider font-bold shadow-[0_0_20px_rgba(0,229,255,0.4)] hover:bg-primary transition-all flex items-center gap-2">
+              <span class="material-symbols-outlined text-lg">request_quote</span>
+              <span>Request Sportswear Quote</span>
+            </a>
+            <a href="3d-customizer.html" class="px-7 py-4 rounded-lg bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container hover:text-primary-container font-mono text-xs uppercase tracking-wider transition-all flex items-center gap-2">
+              <span class="material-symbols-outlined text-lg">view_in_ar</span>
+              <span>Configure in 3D Customizer</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Photographic Collage -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-2xl overflow-hidden border border-border-slate/80 shadow-2xl group">
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1200&auto=format&fit=crop" alt="Custom Football Soccer Jersey Manufacturing" class="w-full h-[460px] object-cover group-hover:scale-105 transition-transform duration-700"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+            
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-surface-midnight/90 backdrop-blur-md border border-primary-container/30 flex items-center justify-between">
+              <div>
+                <span class="font-mono text-[10px] uppercase text-primary-container tracking-wider block font-bold">Featured Production</span>
+                <span class="font-headline text-lg uppercase text-pure-white font-bold">Pro Soccer Match Kits</span>
+              </div>
+              <button onclick="openQuickQuote('Sportswear', 'Pro Football Match Kits')" class="p-2.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary transition-all">
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 SPORTSWEAR CATEGORY SHOWCASE -->
+  <section class="py-20 bg-surface-container-lowest border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">Complete Sportswear Spectrum</span>
+          <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">12 Professional Teamwear Lines</h2>
+        </div>
+        <p class="font-body text-xs text-text-muted max-w-md">
+          Each sport demands specific tensile strength, ventilation mapping, and movement ergonomics. All lines are available with private labeling and custom Pantone matching.
+        </p>
+      </div>
+
+      <!-- 12 Product Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- 1. Football Jerseys -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=600&auto=format&fit=crop" alt="Football Jerseys" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-primary-container text-on-primary-container font-bold">160 GSM</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Football Jerseys</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Raglan & set-in sleeves, ergonomic V-neck or crew neck with sublimated crests.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Pcs</span>
+            <button onclick="openQuickQuote('Sportswear', 'Football Jerseys')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Football Shorts -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1551854838-212c50b4c184?q=80&w=600&auto=format&fit=crop" alt="Football Shorts" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-surface-slate text-pure-white font-bold">Shorts</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Football Shorts</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Elastic waistband with inner drawcord, side slit vents, moisture-wicking interlock.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Pcs</span>
+            <button onclick="openQuickQuote('Sportswear', 'Football Shorts')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Complete Soccer Kits -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop" alt="Complete Soccer Kits" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-secondary-container text-pure-white font-bold">3-Piece Kit</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Soccer Match Kits</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Matching jersey, shorts, and ribbed compression socks with sponsor branding.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Sets</span>
+            <button onclick="openQuickQuote('Sportswear', 'Soccer Match Kits')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Basketball Uniforms -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=600&auto=format&fit=crop" alt="Basketball Uniforms" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-primary-container text-on-primary-container font-bold">180 GSM Mesh</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Basketball Uniforms</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Deep armhole tanks with ribbed neck trim and matching flared athletic shorts.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Sets</span>
+            <button onclick="openQuickQuote('Sportswear', 'Basketball Uniforms')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Cricket Uniforms -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1531415074868-036b1c5d53ec?q=80&w=600&auto=format&fit=crop" alt="Cricket Uniforms" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-surface-slate text-pure-white font-bold">Test & T20</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Cricket Uniforms</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Sublimated T20 colored kits & traditional Test whites with polo collar plackets.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Sets</span>
+            <button onclick="openQuickQuote('Sportswear', 'Cricket Uniforms')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. Baseball Uniforms -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1508344928928-7165b67de128?q=80&w=600&auto=format&fit=crop" alt="Baseball Uniforms" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-surface-slate text-pure-white font-bold">Button-Down</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Baseball Uniforms</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Full button-down and 2-button placket jerseys, reinforced knees baseball pants.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Sets</span>
+            <button onclick="openQuickQuote('Sportswear', 'Baseball Uniforms')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 7. Hockey Uniforms -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1515703407324-5f753afd8be8?q=80&w=600&auto=format&fit=crop" alt="Hockey Uniforms" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-surface-slate text-pure-white font-bold">Field & Ice</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Hockey Uniforms</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Heavy-duty micro-mesh field hockey jerseys and padded ice hockey oversized cuts.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Pcs</span>
+            <button onclick="openQuickQuote('Sportswear', 'Hockey Uniforms')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 8. Netball Uniforms -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?q=80&w=600&auto=format&fit=crop" alt="Netball Uniforms" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-surface-slate text-pure-white font-bold">Dresses & Skorts</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Netball Uniforms</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Sublimated A-line netball dresses with velcro patch attachments and matching skorts.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Pcs</span>
+            <button onclick="openQuickQuote('Sportswear', 'Netball Uniforms')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 9. Teamwear -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=600&auto=format&fit=crop" alt="Teamwear" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-primary-container text-on-primary-container font-bold">Sideline Gear</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Teamwear & Polos</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Staff travel polo shirts, sideline training bibs, coaching staff technical apparel.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Pcs</span>
+            <button onclick="openQuickQuote('Sportswear', 'Teamwear & Polos')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 10. Tracksuits -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop" alt="Tracksuits" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-surface-slate text-pure-white font-bold">220 GSM Tricot</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Club Tracksuits</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Warm-up jackets with full zipper, tapered training pants with zippered ankle cuffs.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 50 Sets</span>
+            <button onclick="openQuickQuote('Sportswear', 'Club Tracksuits')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 11. Clubwear -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=600&auto=format&fit=crop" alt="Clubwear" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-surface-slate text-pure-white font-bold">Fan Apparel</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Clubwear & Supporter Kits</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Official fan merchandise, stadium rain jackets, club scarves, and branded presentation wear.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 100 Pcs</span>
+            <button onclick="openQuickQuote('Sportswear', 'Clubwear & Supporter Kits')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 12. Custom Sports Jerseys -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate/70 hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-high relative">
+            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=600&auto=format&fit=crop" alt="Custom Sports Jerseys" class="w-full h-full object-cover"/>
+            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded font-mono text-[10px] uppercase bg-primary-container text-on-primary-container font-bold">Full Custom</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Custom Sports Jerseys</h3>
+            <p class="font-body text-xs text-text-muted mt-1">Bespoke cutting patterns, non-standard silhouettes, individual player rosters with personalized names/numbers.</p>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-border-slate/60 mt-auto">
+            <span class="font-mono text-xs text-tertiary">MOQ: 25 Pcs</span>
+            <button onclick="openQuickQuote('Sportswear', 'Custom Sports Jerseys')" class="font-mono text-xs uppercase text-primary-container hover:text-primary font-bold flex items-center gap-1">
+              <span>Quote</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECHNICAL FABRIC SPECIFICATIONS -->
+  <section class="py-20 bg-background border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col gap-2 mb-10">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold">Performance Textile Engineering</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Sportswear Fabric Specifications</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3">
+          <span class="font-headline text-2xl text-primary-container font-bold">160 GSM</span>
+          <h4 class="font-headline text-base uppercase text-pure-white font-semibold">AeroPoly Interlock</h4>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            100% Micro-Filament Polyester. Rapid capillary moisture evacuation. Smooth face for crisp 1440 DPI sublimation transfer definition.
+          </p>
+          <span class="font-mono text-[10px] text-tertiary uppercase mt-auto">Used in: Football & Cricket Jerseys</span>
+        </div>
+
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3">
+          <span class="font-headline text-2xl text-primary-container font-bold">180 GSM</span>
+          <h4 class="font-headline text-base uppercase text-pure-white font-semibold">Diamond Birdseye Mesh</h4>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Engineered micro-porous knit structure for maximum airflow. Keeps athlete skin surface temperature down during high aerobic intensity.
+          </p>
+          <span class="font-mono text-[10px] text-tertiary uppercase mt-auto">Used in: Basketball & Running Kits</span>
+        </div>
+
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3">
+          <span class="font-headline text-2xl text-primary-container font-bold">220 GSM</span>
+          <h4 class="font-headline text-base uppercase text-pure-white font-semibold">Poly-Spandex Elastane</h4>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            92% Polyester, 8% Spandex blend. 4-way elastic memory recovery prevents garment sagging during physical contact and sliding tackles.
+          </p>
+          <span class="font-mono text-[10px] text-tertiary uppercase mt-auto">Used in: Compression & Rugby Wear</span>
+        </div>
+
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3">
+          <span class="font-headline text-2xl text-primary-container font-bold">240 GSM</span>
+          <h4 class="font-headline text-base uppercase text-pure-white font-semibold">Brushed Poly Tricot</h4>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Warm brushed fleece reverse face with abrasion-resistant smooth outer shell. Resists snagging on turf and travel luggage.
+          </p>
+          <span class="font-mono text-[10px] text-tertiary uppercase mt-auto">Used in: Team Tracksuits & Sideline Jackets</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOMIZATION OPTIONS -->
+  <section class="py-20 bg-surface-container-lowest border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">In-House Branding Facility</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Customization & Embellishment Options</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3 text-center items-center">
+          <div class="w-12 h-12 rounded-xl bg-primary-container/10 border border-primary-container/30 flex items-center justify-center text-primary-container mb-2">
+            <span class="material-symbols-outlined text-2xl">gradient</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Sublimation Printing</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Japanese Mimaki 1440 DPI printers with water-based non-toxic inks. Zero hand feel, permanent color vibrancy that never peels or cracks.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3 text-center items-center">
+          <div class="w-12 h-12 rounded-xl bg-primary-container/10 border border-primary-container/30 flex items-center justify-center text-primary-container mb-2">
+            <span class="material-symbols-outlined text-2xl">texture</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Tajima Embroidery</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Multi-head 15-color Japanese Tajima embroidery machines for 3D raised puff crests, metallic thread heraldry, and high-density club badges.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3 text-center items-center">
+          <div class="w-12 h-12 rounded-xl bg-primary-container/10 border border-primary-container/30 flex items-center justify-center text-primary-container mb-2">
+            <span class="material-symbols-outlined text-2xl">layers</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Screen & DTF Printing</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            High-density silicone printing, puff ink, and fine-edge Direct-To-Film (DTF) transfers for multi-color complex gradients on cotton or poly.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3 text-center items-center">
+          <div class="w-12 h-12 rounded-xl bg-primary-container/10 border border-primary-container/30 flex items-center justify-center text-primary-container mb-2">
+            <span class="material-symbols-outlined text-2xl">verified</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Custom Labels & Trims</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Tagless heat-transfer neck prints, damask woven crests, personalized jacquard drawstrings, and branded silicone zipper pulls.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4-STEP MANUFACTURING PROCESS -->
+  <section class="py-20 bg-background border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col gap-2 mb-12">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold">Precision Workflow</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Sportswear Manufacturing Process</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+        
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3">
+          <span class="font-headline text-3xl text-primary-container font-bold">01</span>
+          <h4 class="font-headline text-base uppercase text-pure-white font-semibold">CAD Patterning & Sizing</h4>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Digital grading across XS to 4XL. Computerized marker generation ensures maximum fabric efficiency and uniform seam dimensions.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3">
+          <span class="font-headline text-3xl text-primary-container font-bold">02</span>
+          <h4 class="font-headline text-base uppercase text-pure-white font-semibold">1440 DPI Sublimation</h4>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Rotary roll heat presses fuse disperse sublimation dyes deep into fabric fibers at 210°C, ensuring permanent wash-proof bond.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3">
+          <span class="font-headline text-3xl text-primary-container font-bold">03</span>
+          <h4 class="font-headline text-base uppercase text-pure-white font-semibold">4-Needle Flatlock Stitching</h4>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Juki industrial machines bind seams with high-tensile polyester core threads, eliminating skin chafing during intense athletic matches.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/70 flex flex-col gap-3">
+          <span class="font-headline text-3xl text-primary-container font-bold">04</span>
+          <h4 class="font-headline text-base uppercase text-pure-white font-semibold">Hashima Scanner & Packing</h4>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            100% individual garment scan through Hashima metal needle detectors. Custom folding, hangtag application, and carton barcode export packing.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DEDICATED SPORTSWEAR INQUIRY & QUOTE FORM -->
+  <section id="inquiryForm" class="py-20 bg-surface-container-lowest border-b border-border-slate/40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-10">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">Direct Factory Inquiry</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Request Sportswear Quotation</h2>
+        <p class="font-body text-xs text-text-muted mt-2">
+          Your inquiry is transmitted directly to our export desk at <strong class="text-primary-container">chahadmaqsood786@gmail.com</strong>. Official wholesale proforma quotation delivered within 2 hours.
+        </p>
+      </div>
+
+      <div class="p-8 sm:p-10 rounded-2xl bg-surface-midnight border border-border-slate/80 shadow-2xl">
+        <form id="sportswearInquiryForm" onsubmit="handleSportswearSubmit(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-5 font-mono text-xs">
+          
+          <!-- Anti-spam honeypot -->
+          <input type="text" name="_honeypot" style="display:none !important;" tabindex="-1" autocomplete="off"/>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Customer / Representative Name *</label>
+            <input type="text" name="fullName" required placeholder="e.g. Alex Morgan" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Club / Brand / Company Name</label>
+            <input type="text" name="companyName" placeholder="e.g. Apex Football Club" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Corporate Email Address *</label>
+            <input type="email" name="email" required placeholder="e.g. alex@club.com" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Phone / WhatsApp Number</label>
+            <input type="text" name="phone" placeholder="e.g. +44 7700 900077" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Destination Country *</label>
+            <input type="text" name="country" required placeholder="e.g. United Kingdom / United States" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Sportswear Product Line</label>
+            <select name="productName" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none">
+              <option value="Football Jerseys">Football Jerseys</option>
+              <option value="Football Shorts">Football Shorts</option>
+              <option value="Complete Soccer Match Kits" selected>Complete Soccer Match Kits</option>
+              <option value="Basketball Uniforms">Basketball Uniforms</option>
+              <option value="Cricket Sublimation Uniforms">Cricket Uniforms</option>
+              <option value="Baseball Uniforms">Baseball Uniforms</option>
+              <option value="Hockey Uniforms">Hockey Uniforms</option>
+              <option value="Netball Uniforms">Netball Uniforms</option>
+              <option value="Teamwear & Polos">Teamwear & Polos</option>
+              <option value="Club Tracksuits">Club Tracksuits</option>
+              <option value="Custom Sports Jerseys">Custom Sports Jerseys</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Target Order Volume (Pcs) *</label>
+            <select name="quantity" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none">
+              <option value="50-100 Pcs (Initial Run)">50–100 Pcs (Initial Sample Run)</option>
+              <option value="100-300 Pcs" selected>100–300 Pcs (Standard Club Batch)</option>
+              <option value="500-1000 Pcs">500–1,000 Pcs (League Volume)</option>
+              <option value="2500+ Pcs">2,500+ Pcs (Container Export)</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Target Delivery Date</label>
+            <input type="date" name="deliveryDate" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="sm:col-span-2 flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Customization Requirements & Specifications *</label>
+            <textarea name="message" rows="4" required placeholder="Specify fabric GSM (e.g. 160 GSM AeroPoly), collar style (V-neck, Polo), sublimation artwork details, player roster requirements, or private neck labels..." class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"></textarea>
+          </div>
+
+          <div class="sm:col-span-2 flex items-center gap-3 p-3 rounded-lg bg-surface-container-lowest border border-border-slate/60">
+            <input type="checkbox" name="swatchKit" id="swatchCheck" checked class="w-4 h-4 rounded accent-primary-container cursor-pointer"/>
+            <label for="swatchCheck" class="text-on-surface cursor-pointer select-none">
+              Request complimentary fabric swatch kit (AeroPoly Interlock & Birdseye Mesh) via DHL Express with quotation.
+            </label>
+          </div>
+
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit" class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary-container font-mono text-sm uppercase tracking-wider font-bold shadow-[0_0_24px_rgba(0,229,255,0.45)] hover:bg-primary transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-xl">send</span>
+              <span>Submit Sportswear Inquiry to Export Desk</span>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Dynamic Success Confirmation -->
+        <div id="formSuccessState" class="hidden p-6 rounded-xl bg-surface-container-high border border-primary-container/60 shadow-2xl flex flex-col gap-4 mt-6">
+          <div class="flex items-center gap-3 text-tertiary">
+            <span class="material-symbols-outlined text-3xl">verified</span>
+            <div class="flex flex-col">
+              <span class="font-headline text-lg text-pure-white uppercase font-bold">Inquiry Transmitted to Export Desk</span>
+              <span class="font-mono text-xs text-tertiary">REFERENCE TICKET: <strong id="ticketDisplay">GOR-SPORT-2026</strong></span>
+            </div>
+          </div>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Your sportswear manufacturing specifications have been received by our Sialkot Export Desk (<strong class="text-pure-white">chahadmaqsood786@gmail.com</strong>). Our CAD patternmakers and costing engineers will email your comprehensive wholesale proforma dossier within 2 hours.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- GLOBAL FOOTER -->
+<footer class="w-full bg-surface-container-lowest border-t border-surface-slate/80 text-on-surface pt-16 pb-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+      
+      <div class="lg:col-span-2 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-surface-container-high border border-primary-container/40 flex items-center justify-center p-1">
+            <span class="material-symbols-outlined text-primary-container text-xl">apparel</span>
+          </div>
+          <span class="font-headline text-2xl uppercase tracking-wider text-pure-white font-bold">GORSY</span>
+        </div>
+        <p class="font-body text-xs text-text-muted leading-relaxed max-w-sm">
+          Engineering the future of apparel. Your global manufacturing partner for Sportswear, Activewear, Schoolwear, and Sports Goods based in Sialkot, Pakistan.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-3 font-mono text-xs">
+        <h4 class="text-pure-white uppercase font-bold border-b border-border-slate/60 pb-2">Apparel Divisions</h4>
+        <ul class="flex flex-col gap-2 text-text-muted">
+          <li><a href="sportswear.html" class="hover:text-primary-container transition-colors text-primary-container">Sportswear</a></li>
+          <li><a href="activewear.html" class="hover:text-primary-container transition-colors">Activewear</a></li>
+          <li><a href="schoolwear.html" class="hover:text-primary-container transition-colors">Schoolwear</a></li>
+          <li><a href="sports-goods.html" class="hover:text-primary-container transition-colors">Sports Goods</a></li>
+          <li><a href="products.html" class="hover:text-primary-container transition-colors">All Products</a></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-3 font-mono text-xs">
+        <h4 class="text-pure-white uppercase font-bold border-b border-border-slate/60 pb-2">Engineering</h4>
+        <ul class="flex flex-col gap-2 text-text-muted">
+          <li><a href="3d-customizer.html" class="hover:text-primary-container transition-colors">3D Customizer Studio</a></li>
+          <li><a href="manufacturing.html" class="hover:text-primary-container transition-colors">Manufacturing Plant</a></li>
+          <li><a href="private-label.html" class="hover:text-primary-container transition-colors">Private Labeling</a></li>
+          <li><a href="tech-pack.html" class="hover:text-primary-container transition-colors">Tech Pack Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-3 font-mono text-xs">
+        <h4 class="text-pure-white uppercase font-bold border-b border-border-slate/60 pb-2">Company</h4>
+        <ul class="flex flex-col gap-2 text-text-muted">
+          <li><a href="about.html" class="hover:text-primary-container transition-colors">About GORSY</a></li>
+          <li><a href="contact.html" class="hover:text-primary-container transition-colors">Contact Us</a></li>
+          <li><button onclick="downloadBlankTechPackTemplate()" class="text-left hover:text-primary-container">Blank Tech Pack</button></li>
+          <li><button onclick="downloadWholesaleCatalog()" class="text-left hover:text-primary-container">Catalog PDF</button></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-3 font-mono text-xs">
+        <h4 class="text-pure-white uppercase font-bold border-b border-border-slate/60 pb-2">Export Desk</h4>
+        <div class="flex flex-col gap-2 text-text-muted">
+          <span>Sialkot Export Zone, Punjab, Pakistan</span>
+          <a href="mailto:chahadmaqsood786@gmail.com" class="text-primary-container hover:underline">chahadmaqsood786@gmail.com</a>
+          <span>Tel: +92 (52) 123-4567</span>
+          <span class="text-tertiary">Direct Container & Air Freight</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-surface-slate/60 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-text-dim">
+      <div>© 2026 GORSY (PVT) LTD. SIALKOT, PAKISTAN. ALL RIGHTS RESERVED.</div>
+      <div class="flex items-center gap-4">
+        <a href="contact.html" class="hover:text-primary-container">Export Support</a>
+        <a href="3d-customizer.html" class="hover:text-primary-container">3D Customizer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL: QUICK QUOTE MODAL -->
+<div id="quickQuoteModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+  <div class="w-full max-w-lg p-6 sm:p-8 rounded-2xl bg-surface-midnight border border-border-slate/80 shadow-2xl flex flex-col gap-5">
+    <div class="flex items-center justify-between border-b border-border-slate/60 pb-3">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary-container">request_quote</span>
+        <h3 class="font-headline text-xl uppercase text-pure-white font-bold">Request Instant Quotation</h3>
+      </div>
+      <button onclick="closeModal('quickQuoteModal')" class="text-text-dim hover:text-pure-white">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+
+    <form onsubmit="handleQuickQuoteSubmit(event)" class="flex flex-col gap-4 font-mono text-xs">
+      <input type="hidden" id="modalQuoteCategory" name="category" value="Sportswear"/>
+      <div class="flex flex-col gap-1">
+        <label class="text-text-muted uppercase">Product Line</label>
+        <input type="text" id="modalQuoteProduct" name="productName" readonly class="px-3 py-2 rounded bg-surface-container-high text-primary-container font-bold border border-border-slate"/>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="flex flex-col gap-1">
+          <label class="text-text-muted uppercase">Your Name *</label>
+          <input type="text" name="name" required class="px-3 py-2.5 rounded bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-text-muted uppercase">Email *</label>
+          <input type="email" name="email" required class="px-3 py-2.5 rounded bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="flex flex-col gap-1">
+          <label class="text-text-muted uppercase">Quantity *</label>
+          <input type="text" name="quantity" required placeholder="e.g. 100 Pcs" class="px-3 py-2.5 rounded bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-text-muted uppercase">Country *</label>
+          <input type="text" name="country" required placeholder="e.g. USA / UK" class="px-3 py-2.5 rounded bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <label class="text-text-muted uppercase">Requirements / Notes *</label>
+        <textarea name="message" required rows="2" placeholder="Specify fabric, sizes, or custom printing requirements..." class="px-3 py-2.5 rounded bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"></textarea>
+      </div>
+      <button type="submit" class="w-full py-3 rounded bg-primary-container text-on-primary-container font-bold uppercase hover:bg-primary transition-all">
+        Send Quotation Request
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- CURRENCY MODAL -->
+<div id="currencyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="w-full max-w-md p-6 rounded-2xl bg-surface-midnight border border-border-slate/80 shadow-2xl flex flex-col gap-4 font-mono text-xs">
+    <div class="flex items-center justify-between border-b border-border-slate/60 pb-3">
+      <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Select Active Currency</h3>
+      <button onclick="closeModal('currencyModal')" class="text-text-dim hover:text-pure-white">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="grid grid-cols-2 gap-2.5">
+      <button onclick="setCurrency('USD', '$', 1.0)" class="p-3 rounded-lg bg-surface-container-low border border-primary-container text-left flex justify-between">
+        <span>USD ($)</span><span class="text-primary-container font-bold">$</span>
+      </button>
+      <button onclick="setCurrency('EUR', '€', 0.92)" class="p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex justify-between">
+        <span>EUR (€)</span><span class="text-primary-container font-bold">€</span>
+      </button>
+      <button onclick="setCurrency('GBP', '£', 0.79)" class="p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex justify-between">
+        <span>GBP (£)</span><span class="text-primary-container font-bold">£</span>
+      </button>
+      <button onclick="setCurrency('AED', 'AED ', 3.67)" class="p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex justify-between">
+        <span>AED (د.إ)</span><span class="text-primary-container font-bold">AED</span>
+      </button>
+      <button onclick="setCurrency('CAD', 'CA$', 1.36)" class="p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex justify-between">
+        <span>CAD (CA$)</span><span class="text-primary-container font-bold">CA$</span>
+      </button>
+      <button onclick="setCurrency('PKR', 'Rs. ', 278.0)" class="p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex justify-between">
+        <span>PKR (Rs.)</span><span class="text-primary-container font-bold">Rs</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="shared.js"></script>
+<script src="form-handler.js"></script>
+<script>
+  function handleSportswearSubmit(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(
+      e.target,
+      'SPORTSWEAR',
+      (res) => {
+        document.getElementById('ticketDisplay').innerText = res.ticketId;
+        document.getElementById('sportswearInquiryForm').classList.add('hidden');
+        document.getElementById('formSuccessState').classList.remove('hidden');
+      }
+    );
+  }
+
+  function handleQuickQuoteSubmit(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(
+      e.target,
+      'SPORTSWEAR QUOTE',
+      (res) => {
+        closeModal('quickQuoteModal');
+        showToast(`Quotation ticket ${res.ticketId} generated! Dispatched to chahadmaqsood786@gmail.com.`);
+      }
+    );
+  }
+</script>
+</body>
+</html>

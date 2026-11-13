@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>Manufacturing Capabilities & Factory Tour | GORSY Sialkot</title>
+  <meta name="description" content="In-house manufacturing plant in Sialkot, Pakistan. Automated CNC fabric cutting, 1440 DPI sublimation printing, Tajima embroidery, 4-needle flatlock stitching, and Hashima needle detection."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00363d",
+            "secondary": "#b4c5ff",
+            "tertiary": "#cdff13",
+            "background": "#0a0e14",
+            "surface-midnight": "#0b111c",
+            "surface-container-lowest": "#06090e",
+            "surface-container-high": "#222732",
+            "surface-slate": "#1e293b",
+            "border-slate": "#334155",
+            "on-surface": "#dfe2eb",
+            "text-muted": "#94a3b8",
+            "text-dim": "#64748b",
+            "pure-white": "#ffffff"
+          },
+          fontFamily: {
+            "headline": ["Oswald", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "mono": ["Space Grotesk", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { background-color: #0a0e14; color: #dfe2eb; overflow-x: hidden; }
+    .bg-tech-grid {
+      background-image: linear-gradient(to right, rgba(30, 41, 59, 0.22) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(30, 41, 59, 0.22) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 flex flex-col bg-surface-midnight/95 backdrop-blur-xl border-b border-surface-slate/60 shadow-xl">
+  <div class="w-full bg-surface-container-lowest border-b border-surface-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-8 flex items-center justify-between font-mono text-xs">
+      <div class="flex items-center gap-2 text-on-surface truncate">
+        <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        <span class="uppercase tracking-wider text-text-muted">GORSY Factory Floor • Sialkot Export Processing Zone (EPZ)</span>
+      </div>
+      <div class="flex items-center gap-4 text-text-muted">
+        <button onclick="openModal('currencyModal')" class="flex items-center gap-1 hover:text-primary-container uppercase font-mono text-xs">
+          <span class="navCurrencyLabel">USD ($)</span>
+          <span class="material-symbols-outlined text-xs">expand_more</span>
+        </button>
+        <span class="text-border-slate">|</span>
+        <a href="mailto:chahadmaqsood786@gmail.com" class="text-on-surface hover:text-primary-container font-mono">chahadmaqsood786@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-surface-container-high border border-primary-container/40 flex items-center justify-center p-1.5 shadow-[0_0_12px_rgba(0,229,255,0.25)]">
+        <span class="material-symbols-outlined text-primary-container text-2xl">precision_manufacturing</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1.5">
+          <span class="font-headline text-2xl uppercase tracking-wider text-pure-white font-bold leading-none">GORSY</span>
+          <span class="px-1.5 py-0.5 rounded text-[9px] font-mono uppercase bg-primary-container/15 text-primary-container border border-primary-container/30">PLANT</span>
+        </div>
+        <span class="font-mono text-[10px] tracking-widest text-text-muted uppercase mt-1">Industrial Infrastructure</span>
+      </div>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-1.5 h-full text-xs font-mono uppercase tracking-wider">
+      <a href="index.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Home</a>
+      <a href="sportswear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Sportswear</a>
+      <a href="activewear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Activewear</a>
+      <a href="schoolwear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Schoolwear</a>
+      <a href="sports-goods.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Sports Goods</a>
+      <a href="3d-customizer.html" class="h-full inline-flex items-center gap-1 px-2.5 text-text-muted hover:text-primary-container">
+        <span>3D Studio</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+      </a>
+      <a href="manufacturing.html" class="h-full inline-flex items-center px-2.5 text-primary-container font-bold border-b-2 border-primary-container">Manufacturing</a>
+      <a href="about.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">About Us</a>
+      <a href="contact.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="tech-pack.html" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase">
+        <span class="material-symbols-outlined text-base">description</span>
+        <span>Submit CAD</span>
+      </a>
+      <a href="#factoryAudit" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-mono text-xs uppercase font-bold shadow-[0_0_16px_rgba(0,229,255,0.4)] hover:bg-primary transition-all">
+        <span class="material-symbols-outlined text-base">domain_verification</span>
+        <span>Audit Plant</span>
+      </a>
+      <button onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded bg-surface-container-high text-on-surface">
+        <span id="mobileMenuIcon" class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden xl:hidden w-full bg-surface-midnight border-b border-border-slate/80 p-6 font-mono text-xs uppercase flex flex-col gap-2">
+    <a href="index.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Home</a>
+    <a href="sportswear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Sportswear</a>
+    <a href="activewear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Activewear</a>
+    <a href="schoolwear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Schoolwear</a>
+    <a href="sports-goods.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Sports Goods</a>
+    <a href="3d-customizer.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">3D Customizer</a>
+    <a href="manufacturing.html" class="py-2.5 px-3 rounded bg-primary-container/10 text-primary-container font-bold">Manufacturing</a>
+    <a href="private-label.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Private Label</a>
+    <a href="about.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">About Us</a>
+    <a href="contact.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Contact</a>
+  </div>
+</header>
+
+<main class="pt-28">
+  <div class="w-full bg-surface-container-lowest border-b border-border-slate/40 py-2.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-2 font-mono text-xs text-text-dim">
+      <a href="index.html" class="hover:text-primary-container">Home</a>
+      <span>/</span>
+      <span class="text-primary-container font-semibold">Manufacturing Infrastructure</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="py-20 lg:py-24 bg-tech-grid border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container/10 border border-primary-container/30 text-primary-container font-mono text-xs uppercase tracking-widest mb-4">
+          <span class="material-symbols-outlined text-sm">factory</span>
+          <span>Sialkot Export Processing Zone (EPZ)</span>
+        </div>
+        <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl uppercase text-pure-white font-bold leading-none">
+          IN-HOUSE MANUFACTURING & <br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-pure-white to-secondary">INDUSTRIAL INFRASTRUCTURE</span>
+        </h1>
+        <p class="font-body text-base text-text-muted mt-4 leading-relaxed">
+          From computerized grading to 1440 DPI Japanese sublimation rotary presses and Hashima needle detection scanners. We operate a completely integrated in-house factory floor eliminating third-party subcontractor delays.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 MANUFACTURING PROCESS STAGES -->
+  <section class="py-20 bg-surface-container-lowest border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col gap-2 mb-12">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold">Factory Operations</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">11 Industrial Manufacturing Stages</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Fabric Inspection -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=600&auto=format&fit=crop" alt="Fabric Inspection" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 01</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Fabric Greige Inspection</h3>
+          <p class="font-body text-xs text-text-muted">4-point light table inspection system testing for yarn snags, GSM consistency, tensile tear resistance, and colorfastness.</p>
+        </div>
+
+        <!-- 2. CNC Fabric Cutting -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop" alt="CNC Fabric Cutting" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 02</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Automated CNC Cutting</h3>
+          <p class="font-body text-xs text-text-muted">Computer-controlled oscillating knife cutter and laser beds with ±0.5mm pattern tolerance, ensuring zero edge fraying.</p>
+        </div>
+
+        <!-- 3. Sublimation Printing -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop" alt="Sublimation Printing" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 03</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">1440 DPI Sublimation</h3>
+          <p class="font-body text-xs text-text-muted">Industrial Japanese Mimaki printing battery. Rotary continuous calender heat presses transfer artwork at 210°C with permanent chemical fiber bonding.</p>
+        </div>
+
+        <!-- 4. Screen Printing -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=600&auto=format&fit=crop" alt="Screen Printing" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 04</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Industrial Screen Printing</h3>
+          <p class="font-body text-xs text-text-muted">Automatic carousel screen printers using eco-friendly water-based, plastisol, discharge, and high-density 3D silicone inks.</p>
+        </div>
+
+        <!-- 5. DTF Printing -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=600&auto=format&fit=crop" alt="DTF Printing" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 05</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Direct-To-Film (DTF)</h3>
+          <p class="font-body text-xs text-text-muted">High-resolution photographic transfers on dark cotton and performance elastane blends with soft hot-melt powder adhesive backing.</p>
+        </div>
+
+        <!-- 6. Industrial Embroidery -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600&auto=format&fit=crop" alt="Industrial Embroidery" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 06</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Tajima Industrial Embroidery</h3>
+          <p class="font-body text-xs text-text-muted">20-head Japanese Tajima 15-color machines producing 3D raised foam embroidery, applique patches, and intricate team heraldry crests.</p>
+        </div>
+
+        <!-- 7. Garment Stitching -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?q=80&w=600&auto=format&fit=crop" alt="Garment Stitching" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 07</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Precision Garment Stitching</h3>
+          <p class="font-body text-xs text-text-muted">Dedicated lines of Juki 4-needle 6-thread flatlock machines, 5-thread overlockers, and programmable bar-tack machines.</p>
+        </div>
+
+        <!-- 8. Quality Control -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=600&auto=format&fit=crop" alt="Quality Control" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 08</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Dimensional Tolerance Auditing</h3>
+          <p class="font-body text-xs text-text-muted">AQL 2.5 military-standard inspection measuring chest, length, sleeve opening, and seam tension tolerance against buyer tech packs.</p>
+        </div>
+
+        <!-- 9. Final Inspection & Metal Detection -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=600&auto=format&fit=crop" alt="Final Inspection" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 09</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Hashima Needle Detection</h3>
+          <p class="font-body text-xs text-text-muted">100% garment piece scan through Hashima electromagnetic tunnel detectors ensuring zero broken needle fragments in exported apparel.</p>
+        </div>
+
+        <!-- 10. Packaging -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop" alt="Packaging" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 10</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Custom Packaging & Hangtags</h3>
+          <p class="font-body text-xs text-text-muted">Custom branded matte frosted zipper bags with desiccant silica packs, branded hangtag application, and individual EAN-13 barcoding.</p>
+        </div>
+
+        <!-- 11. Export Preparation -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3 md:col-span-2">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-surface-slate mb-1">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1200&auto=format&fit=crop" alt="Export Logistics" class="w-full h-full object-cover"/>
+          </div>
+          <span class="font-mono text-xs text-primary-container font-bold uppercase">Stage 11</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Export Carton Strapping & Cargo Dispatch</h3>
+          <p class="font-body text-xs text-text-muted">Heavy-duty 7-ply double-corrugated export master cartons with moisture barrier liners and high-tensile plastic strapping. Fast customs clearance at Sialkot Dry Port & International Airport.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FACTORY AUDIT & INQUIRY FORM -->
+  <section id="factoryAudit" class="py-20 bg-background border-b border-border-slate/40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-10">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">Buyer Assurance</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Schedule Plant Audit or Request Factory Profile</h2>
+        <p class="font-body text-xs text-text-muted mt-2">
+          Direct dispatch to <strong class="text-primary-container">chahadmaqsood786@gmail.com</strong>.
+        </p>
+      </div>
+
+      <div class="p-8 sm:p-10 rounded-2xl bg-surface-midnight border border-border-slate/80 shadow-2xl">
+        <form id="mfgInquiryForm" onsubmit="handleMfgSubmit(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-5 font-mono text-xs">
+          <input type="text" name="_honeypot" style="display:none !important;" tabindex="-1" autocomplete="off"/>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Buyer Name *</label>
+            <input type="text" name="fullName" required placeholder="Marcus Weber" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Company / Importer Name</label>
+            <input type="text" name="companyName" placeholder="European Sports Import GmbH" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Email *</label>
+            <input type="email" name="email" required placeholder="m.weber@sports-import.de" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Phone / WhatsApp</label>
+            <input type="text" name="phone" placeholder="+49 30 1234567" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Country *</label>
+            <input type="text" name="country" required placeholder="Germany / France / USA" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Inquiry Purpose</label>
+            <select name="productName" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none">
+              <option value="Virtual Video Plant Audit">Virtual Video Plant Walkthrough</option>
+              <option value="Physical Factory Visit - Sialkot">Physical Factory Visit (Sialkot EPZ)</option>
+              <option value="Long-term OEM Contract Manufacturing">Long-term OEM Contract Manufacturing</option>
+              <option value="Technical Machinery Capacities Dossier">Technical Machinery Capacities Dossier</option>
+            </select>
+          </div>
+
+          <div class="sm:col-span-2 flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Technical Inquiries & Machinery Specifications *</label>
+            <textarea name="message" rows="4" required placeholder="Describe your product lines, target monthly volume, compliance requirements, or requested dates for video audit..." class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"></textarea>
+          </div>
+
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit" class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary-container font-mono text-sm uppercase font-bold shadow-[0_0_24px_rgba(0,229,255,0.45)] hover:bg-primary transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-xl">send</span>
+              <span>Submit Factory Audit Request to Export Desk</span>
+            </button>
+          </div>
+        </form>
+
+        <div id="mfgSuccess" class="hidden p-6 rounded-xl bg-surface-container-high border border-primary-container/60 shadow-2xl flex flex-col gap-3 mt-6">
+          <div class="flex items-center gap-3 text-tertiary">
+            <span class="material-symbols-outlined text-3xl">verified</span>
+            <span class="font-headline text-lg text-pure-white uppercase font-bold">Factory Audit Inquiry Logged</span>
+          </div>
+          <p class="font-body text-xs text-text-muted">
+            Transmitted directly to <strong class="text-pure-white">chahadmaqsood786@gmail.com</strong>. Our plant operations director will reply within 2 hours.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="w-full bg-surface-container-lowest border-t border-surface-slate/80 text-on-surface py-12 text-center font-mono text-xs text-text-dim">
+  © 2026 GORSY (PVT) LTD • MANUFACTURING PLANT • SIALKOT, PAKISTAN
+</footer>
+
+<div id="currencyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="w-full max-w-md p-6 rounded-2xl bg-surface-midnight border border-border-slate font-mono text-xs">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="font-headline text-lg text-pure-white uppercase font-bold">Select Currency</h3>
+      <button onclick="closeModal('currencyModal')"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <button onclick="setCurrency('USD', '$', 1.0)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>USD ($)</span><span class="text-primary-container font-bold">$</span></button>
+      <button onclick="setCurrency('EUR', '€', 0.92)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>EUR (€)</span><span class="text-primary-container font-bold">€</span></button>
+      <button onclick="setCurrency('GBP', '£', 0.79)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>GBP (£)</span><span class="text-primary-container font-bold">£</span></button>
+      <button onclick="setCurrency('AED', 'AED ', 3.67)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>AED</span><span class="text-primary-container font-bold">AED</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+<script src="form-handler.js"></script>
+<script>
+  function handleMfgSubmit(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(e.target, 'MANUFACTURING AUDIT', (res) => {
+      document.getElementById('mfgInquiryForm').classList.add('hidden');
+      document.getElementById('mfgSuccess').classList.remove('hidden');
+    });
+  }
+</script>
+</body>
+</html>

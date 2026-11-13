@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>Sports Goods & Cricket Equipment Manufacturing | GORSY Sialkot</title>
+  <meta name="description" content="Authentic Sialkot manufacturer of English Willow cricket bats (Sizes 0 to 6 & SH), alum-tanned 4-piece leather cricket balls (156g, 142g, 135g in Red, White, Pink), hand-stitched club balls and protective gear."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00363d",
+            "secondary": "#b4c5ff",
+            "tertiary": "#cdff13",
+            "background": "#0a0e14",
+            "surface-midnight": "#0b111c",
+            "surface-container-lowest": "#06090e",
+            "surface-container-high": "#222732",
+            "surface-slate": "#1e293b",
+            "border-slate": "#334155",
+            "on-surface": "#dfe2eb",
+            "text-muted": "#94a3b8",
+            "text-dim": "#64748b",
+            "pure-white": "#ffffff",
+            "heritage-gold": "#d89c33",
+            "heritage-red": "#c81822"
+          },
+          fontFamily: {
+            "headline": ["Oswald", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "mono": ["Space Grotesk", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { background-color: #0a0e14; color: #dfe2eb; overflow-x: hidden; }
+    .bg-tech-grid {
+      background-image: linear-gradient(to right, rgba(30, 41, 59, 0.22) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(30, 41, 59, 0.22) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .hover-cyan-glow:hover {
+      border-color: rgba(0, 229, 255, 0.7);
+      box-shadow: 0 8px 30px -4px rgba(0, 229, 255, 0.22);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 flex flex-col bg-surface-midnight/95 backdrop-blur-xl border-b border-surface-slate/60 shadow-xl">
+  <div class="w-full bg-surface-container-lowest border-b border-surface-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-8 flex items-center justify-between font-mono text-xs">
+      <div class="flex items-center gap-2 text-on-surface truncate">
+        <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        <span class="uppercase tracking-wider text-text-muted">GORSY Sports Goods • Sialkot Leather Cricket Balls & Grade 1 English Willow</span>
+      </div>
+      <div class="flex items-center gap-4 text-text-muted">
+        <button onclick="openModal('currencyModal')" class="flex items-center gap-1 hover:text-primary-container transition-colors uppercase font-mono text-xs">
+          <span class="navCurrencyLabel">USD ($)</span>
+          <span class="material-symbols-outlined text-xs">expand_more</span>
+        </button>
+        <span class="text-border-slate">|</span>
+        <a href="mailto:chahadmaqsood786@gmail.com" class="text-on-surface hover:text-primary-container font-mono">chahadmaqsood786@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-surface-container-high border border-primary-container/40 flex items-center justify-center p-1.5 shadow-[0_0_12px_rgba(0,229,255,0.25)]">
+        <span class="material-symbols-outlined text-primary-container text-2xl">sports_cricket</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1.5">
+          <span class="font-headline text-2xl uppercase tracking-wider text-pure-white font-bold leading-none">GORSY</span>
+          <span class="px-1.5 py-0.5 rounded text-[9px] font-mono uppercase bg-primary-container/15 text-primary-container border border-primary-container/30">SPORTS</span>
+        </div>
+        <span class="font-mono text-[10px] tracking-widest text-text-muted uppercase mt-1">Cricket Gear & Equipment</span>
+      </div>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-1.5 h-full text-xs font-mono uppercase tracking-wider">
+      <a href="index.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Home</a>
+      <a href="sportswear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Sportswear</a>
+      <a href="activewear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Activewear</a>
+      <a href="schoolwear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Schoolwear</a>
+      <a href="sports-goods.html" class="h-full inline-flex items-center px-2.5 text-primary-container font-bold border-b-2 border-primary-container">Sports Goods</a>
+      <a href="3d-customizer.html" class="h-full inline-flex items-center gap-1 px-2.5 text-text-muted hover:text-primary-container">
+        <span>3D Studio</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+      </a>
+      <a href="manufacturing.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Manufacturing</a>
+      <a href="about.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">About Us</a>
+      <a href="contact.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="tech-pack.html" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase">
+        <span class="material-symbols-outlined text-base">description</span>
+        <span>Custom Spec</span>
+      </a>
+      <a href="#sportsGoodsForm" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-mono text-xs uppercase font-bold shadow-[0_0_16px_rgba(0,229,255,0.4)] hover:bg-primary transition-all">
+        <span class="material-symbols-outlined text-base">request_quote</span>
+        <span>Equipment Quote</span>
+      </a>
+      <button onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded bg-surface-container-high text-on-surface">
+        <span id="mobileMenuIcon" class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden xl:hidden w-full bg-surface-midnight border-b border-border-slate/80 p-6 font-mono text-xs uppercase flex flex-col gap-2">
+    <a href="index.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Home</a>
+    <a href="sportswear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Sportswear</a>
+    <a href="activewear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Activewear</a>
+    <a href="schoolwear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Schoolwear</a>
+    <a href="sports-goods.html" class="py-2.5 px-3 rounded bg-primary-container/10 text-primary-container font-bold">Sports Goods</a>
+    <a href="3d-customizer.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">3D Customizer</a>
+    <a href="manufacturing.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Manufacturing</a>
+    <a href="private-label.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Private Label</a>
+    <a href="about.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">About Us</a>
+    <a href="contact.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Contact</a>
+  </div>
+</header>
+
+<main class="pt-28">
+  <!-- BREADCRUMB -->
+  <div class="w-full bg-surface-container-lowest border-b border-border-slate/40 py-2.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-2 font-mono text-xs text-text-dim">
+      <a href="index.html" class="hover:text-primary-container">Home</a>
+      <span>/</span>
+      <span class="text-primary-container font-semibold">Sports Goods & Cricket Equipment</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="py-20 lg:py-24 bg-tech-grid border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 flex flex-col gap-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container/10 border border-primary-container/30 text-primary-container font-mono text-xs uppercase tracking-widest w-fit">
+            <span class="material-symbols-outlined text-sm">sports_cricket</span>
+            <span>Handcrafted in Sialkot, Pakistan — World Capital of Sports Manufacturing</span>
+          </div>
+
+          <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl uppercase text-pure-white font-bold leading-none">
+            PRO CRICKET BATS & <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-pure-white to-secondary">ALUM-TANNED BALLS</span>
+          </h1>
+
+          <p class="font-body text-base text-text-muted max-w-xl leading-relaxed">
+            Direct factory manufacturing of Grade 1 English Willow cricket bats in sizes 0 through 6 & Short Handle (SH), alongside hand-stitched alum-tanned 4-piece leather cricket balls in official 156g, 142g, and 135g match weights.
+          </p>
+
+          <div class="grid grid-cols-3 gap-3 pt-2 font-mono">
+            <div class="p-3 rounded-lg bg-surface-midnight border border-border-slate">
+              <span class="text-[10px] text-text-dim uppercase block">Willow Grades</span>
+              <span class="font-headline text-lg text-primary-container font-bold">Grade 1 English</span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-midnight border border-border-slate">
+              <span class="text-[10px] text-text-dim uppercase block">Ball Weights</span>
+              <span class="font-headline text-lg text-tertiary font-bold">156g / 142g / 135g</span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-midnight border border-border-slate">
+              <span class="text-[10px] text-text-dim uppercase block">Bat Sizing</span>
+              <span class="font-headline text-lg text-pure-white font-bold">Sizes 0 to 6 & SH</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#sportsGoodsForm" class="px-7 py-4 rounded-lg bg-primary-container text-on-primary-container font-mono text-xs uppercase font-bold shadow-[0_0_20px_rgba(0,229,255,0.4)] hover:bg-primary transition-all">
+              Request Equipment Quote
+            </a>
+            <a href="#cricketBalls" class="px-7 py-4 rounded-lg bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase transition-all">
+              Inspect Ball Weights
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-2xl overflow-hidden border border-border-slate/80 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1531415074868-036b1c5d53ec?q=80&w=1200&auto=format&fit=crop" alt="Sialkot Cricket Manufacturing" class="w-full h-[450px] object-cover"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CRICKET BALL SPECIFICATIONS SECTION (156g, 142g, 135g) -->
+  <section id="cricketBalls" class="py-20 bg-surface-container-lowest border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">ICC Regulation Weights & Construction</span>
+          <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Alum-Tanned Leather Cricket Balls</h2>
+        </div>
+        <p class="font-body text-xs text-text-muted max-w-md">
+          Manufactured with Portuguese cork-wound centers, 100% genuine alum-tanned steer hide, 75–82 hand-stitched seam stitches, and waterproof nitrocellulose polish.
+        </p>
+      </div>
+
+      <!-- Cricket Ball Weights Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        
+        <!-- 156g Senior Men's -->
+        <div class="p-6 rounded-xl bg-surface-midnight border-2 border-primary-container/60 hover-cyan-glow flex flex-col gap-4 relative">
+          <span class="absolute top-4 right-4 px-2.5 py-0.5 rounded font-mono text-[10px] uppercase bg-primary-container text-on-primary-container font-bold">Standard Match</span>
+          <div>
+            <span class="font-headline text-4xl text-primary-container font-bold">156 Grams</span>
+            <span class="font-mono text-xs text-text-dim block mt-0.5">5.50 Ounces (Senior Men's Official)</span>
+          </div>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Regulation ICC match ball weight for all senior men's First-Class, Test, ODI, and club league competitions. 4-piece alum-tanned casing with high seam retention.
+          </p>
+          <div class="flex flex-col gap-1.5 font-mono text-xs text-text-muted border-t border-border-slate pt-3">
+            <div class="flex justify-between"><span>Circumference:</span><span class="text-pure-white font-semibold">22.4 cm – 22.9 cm</span></div>
+            <div class="flex justify-between"><span>Seam Stitching:</span><span class="text-tertiary font-semibold">Hand-Stitched (80 Stitches)</span></div>
+            <div class="flex justify-between"><span>Available Colors:</span><span class="text-pure-white font-semibold">Red, Pink, White</span></div>
+          </div>
+          <button onclick="openQuickQuote('Cricket Balls', '156g Senior Leather Ball')" class="mt-auto w-full py-2.5 rounded bg-primary-container text-on-primary-container font-mono text-xs uppercase font-bold hover:bg-primary transition-all">
+            Quote 156g Batch
+          </button>
+        </div>
+
+        <!-- 142g Women's / Youth -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate hover-cyan-glow flex flex-col gap-4 relative">
+          <span class="absolute top-4 right-4 px-2.5 py-0.5 rounded font-mono text-[10px] uppercase bg-secondary-container text-pure-white font-bold">Women / U-15</span>
+          <div>
+            <span class="font-headline text-4xl text-secondary font-bold">142 Grams</span>
+            <span class="font-mono text-xs text-text-dim block mt-0.5">5.00 Ounces (Women & Youth Match)</span>
+          </div>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Official ICC specification for Women’s International cricket and Under-15 boys academy cricket. Balanced core density for optimal swing and bounce.
+          </p>
+          <div class="flex flex-col gap-1.5 font-mono text-xs text-text-muted border-t border-border-slate pt-3">
+            <div class="flex justify-between"><span>Circumference:</span><span class="text-pure-white font-semibold">21.0 cm – 22.5 cm</span></div>
+            <div class="flex justify-between"><span>Seam Stitching:</span><span class="text-tertiary font-semibold">Hand & Machine Stitched</span></div>
+            <div class="flex justify-between"><span>Available Colors:</span><span class="text-pure-white font-semibold">Red, Pink, White</span></div>
+          </div>
+          <button onclick="openQuickQuote('Cricket Balls', '142g Women/Youth Leather Ball')" class="mt-auto w-full py-2.5 rounded bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase font-bold transition-all">
+            Quote 142g Batch
+          </button>
+        </div>
+
+        <!-- 135g Junior -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate hover-cyan-glow flex flex-col gap-4 relative">
+          <span class="absolute top-4 right-4 px-2.5 py-0.5 rounded font-mono text-[10px] uppercase bg-surface-slate text-pure-white font-bold">Junior U-13</span>
+          <div>
+            <span class="font-headline text-4xl text-pure-white font-bold">135 Grams</span>
+            <span class="font-mono text-xs text-text-dim block mt-0.5">4.75 Ounces (Junior School Cricket)</span>
+          </div>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Developed for junior school programs and Under-13 players. Prevents hand injury and wrist strain while teaching authentic seam bowling mechanics.
+          </p>
+          <div class="flex flex-col gap-1.5 font-mono text-xs text-text-muted border-t border-border-slate pt-3">
+            <div class="flex justify-between"><span>Circumference:</span><span class="text-pure-white font-semibold">20.5 cm – 22.0 cm</span></div>
+            <div class="flex justify-between"><span>Seam Stitching:</span><span class="text-tertiary font-semibold">Machine Stitched Club Grade</span></div>
+            <div class="flex justify-between"><span>Available Colors:</span><span class="text-pure-white font-semibold">Red, Pink, White</span></div>
+          </div>
+          <button onclick="openQuickQuote('Cricket Balls', '135g Junior Leather Ball')" class="mt-auto w-full py-2.5 rounded bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase font-bold transition-all">
+            Quote 135g Batch
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Color Variations -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-border-slate/60">
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate flex items-center gap-4">
+          <span class="w-12 h-12 rounded-full bg-[#c81822] border-2 border-white/20 shrink-0 shadow-lg"></span>
+          <div>
+            <h4 class="font-headline text-lg uppercase text-pure-white font-bold">Red Leather Balls</h4>
+            <p class="font-body text-xs text-text-muted">Day matches & multi-day Test cricket. Hand-waxed finish.</p>
+          </div>
+        </div>
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate flex items-center gap-4">
+          <span class="w-12 h-12 rounded-full bg-[#ff5299] border-2 border-white/20 shrink-0 shadow-lg"></span>
+          <div>
+            <h4 class="font-headline text-lg uppercase text-pure-white font-bold">Pink Leather Balls</h4>
+            <p class="font-body text-xs text-text-muted">Day/Night Test matches under floodlights. High visibility pigment.</p>
+          </div>
+        </div>
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate flex items-center gap-4">
+          <span class="w-12 h-12 rounded-full bg-[#ffffff] border-2 border-black/40 shrink-0 shadow-lg"></span>
+          <div>
+            <h4 class="font-headline text-lg uppercase text-pure-white font-bold">White Leather Balls</h4>
+            <p class="font-body text-xs text-text-muted">Limited overs ODI & T20 cricket. Durable polyurethane top coat.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CRICKET BATS SIZING (SIZE 0 TO 6 & SH) -->
+  <section class="py-20 bg-background border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">Grade 1 & Kashmir Willow Bats</span>
+          <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Cricket Bats — Full Size Range (0 to 6 & SH)</h2>
+        </div>
+        <p class="font-body text-xs text-text-muted max-w-md">
+          Pressed to 1,800 PSI for maximum sweet-spot rebound. 12-piece Singapore cane handle with 3-rubber shock absorption inserts.
+        </p>
+      </div>
+
+      <!-- Bat Sizes Matrix Table -->
+      <div class="overflow-x-auto rounded-xl border border-border-slate/80 shadow-2xl mb-12">
+        <table class="w-full text-left font-mono text-xs bg-surface-midnight">
+          <thead class="bg-surface-container-high border-b border-border-slate text-text-dim uppercase text-[11px]">
+            <tr>
+              <th class="p-4">Bat Size</th>
+              <th class="p-4">Target Player Age</th>
+              <th class="p-4">Player Height</th>
+              <th class="p-4">Total Bat Length</th>
+              <th class="p-4">Blade Width</th>
+              <th class="p-4">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border-slate/60 text-pure-white">
+            <tr class="hover:bg-surface-slate/40">
+              <td class="p-4 font-bold text-primary-container">Size 0</td>
+              <td class="p-4 text-text-muted">Age 4 to 5 Years</td>
+              <td class="p-4 text-text-muted">Up to 3' 11" (120 cm)</td>
+              <td class="p-4">26.5 Inches (67.3 cm)</td>
+              <td class="p-4">3.5 Inches (8.9 cm)</td>
+              <td class="p-4"><button onclick="openQuickQuote('Cricket Bats', 'Size 0 Cricket Bat')" class="text-primary hover:underline">Quote →</button></td>
+            </tr>
+            <tr class="hover:bg-surface-slate/40">
+              <td class="p-4 font-bold text-primary-container">Size 1</td>
+              <td class="p-4 text-text-muted">Age 5 to 6 Years</td>
+              <td class="p-4 text-text-muted">3' 11" – 4' 3" (120–130 cm)</td>
+              <td class="p-4">27.75 Inches (70.5 cm)</td>
+              <td class="p-4">3.6 Inches (9.1 cm)</td>
+              <td class="p-4"><button onclick="openQuickQuote('Cricket Bats', 'Size 1 Cricket Bat')" class="text-primary hover:underline">Quote →</button></td>
+            </tr>
+            <tr class="hover:bg-surface-slate/40">
+              <td class="p-4 font-bold text-primary-container">Size 2</td>
+              <td class="p-4 text-text-muted">Age 6 to 7 Years</td>
+              <td class="p-4 text-text-muted">4' 3" – 4' 6" (130–137 cm)</td>
+              <td class="p-4">29.0 Inches (73.7 cm)</td>
+              <td class="p-4">3.75 Inches (9.5 cm)</td>
+              <td class="p-4"><button onclick="openQuickQuote('Cricket Bats', 'Size 2 Cricket Bat')" class="text-primary hover:underline">Quote →</button></td>
+            </tr>
+            <tr class="hover:bg-surface-slate/40">
+              <td class="p-4 font-bold text-primary-container">Size 3</td>
+              <td class="p-4 text-text-muted">Age 7 to 8 Years</td>
+              <td class="p-4 text-text-muted">4' 6" – 4' 9" (137–145 cm)</td>
+              <td class="p-4">30.25 Inches (76.8 cm)</td>
+              <td class="p-4">3.75 Inches (9.5 cm)</td>
+              <td class="p-4"><button onclick="openQuickQuote('Cricket Bats', 'Size 3 Cricket Bat')" class="text-primary hover:underline">Quote →</button></td>
+            </tr>
+            <tr class="hover:bg-surface-slate/40">
+              <td class="p-4 font-bold text-primary-container">Size 4</td>
+              <td class="p-4 text-text-muted">Age 8 to 9 Years</td>
+              <td class="p-4 text-text-muted">4' 9" – 5' 0" (145–152 cm)</td>
+              <td class="p-4">31.5 Inches (80.0 cm)</td>
+              <td class="p-4">4.0 Inches (10.2 cm)</td>
+              <td class="p-4"><button onclick="openQuickQuote('Cricket Bats', 'Size 4 Cricket Bat')" class="text-primary hover:underline">Quote →</button></td>
+            </tr>
+            <tr class="hover:bg-surface-slate/40">
+              <td class="p-4 font-bold text-primary-container">Size 5</td>
+              <td class="p-4 text-text-muted">Age 9 to 10 Years</td>
+              <td class="p-4 text-text-muted">5' 0" – 5' 3" (152–160 cm)</td>
+              <td class="p-4">32.25 Inches (81.9 cm)</td>
+              <td class="p-4">4.0 Inches (10.2 cm)</td>
+              <td class="p-4"><button onclick="openQuickQuote('Cricket Bats', 'Size 5 Cricket Bat')" class="text-primary hover:underline">Quote →</button></td>
+            </tr>
+            <tr class="hover:bg-surface-slate/40">
+              <td class="p-4 font-bold text-primary-container">Size 6</td>
+              <td class="p-4 text-text-muted">Age 10 to 12 Years</td>
+              <td class="p-4 text-text-muted">5' 3" – 5' 6" (160–168 cm)</td>
+              <td class="p-4">33.0 Inches (83.8 cm)</td>
+              <td class="p-4">4.25 Inches (10.8 cm)</td>
+              <td class="p-4"><button onclick="openQuickQuote('Cricket Bats', 'Size 6 Cricket Bat')" class="text-primary hover:underline">Quote →</button></td>
+            </tr>
+            <tr class="bg-primary-container/10 hover:bg-primary-container/15 font-bold">
+              <td class="p-4 text-primary-container">Short Handle (SH)</td>
+              <td class="p-4 text-pure-white">Adult (Age 15+)</td>
+              <td class="p-4 text-pure-white">5' 8" – 6' 2" (173–188 cm)</td>
+              <td class="p-4 text-pure-white">33.5 Inches (85.1 cm)</td>
+              <td class="p-4 text-pure-white">4.25 Inches (10.8 cm)</td>
+              <td class="p-4"><button onclick="openQuickQuote('Cricket Bats', 'Short Handle (SH) Adult Bat')" class="text-primary-container font-bold hover:underline">Quote SH →</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Other Sports Equipment -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">shield</span>
+          <h4 class="font-headline text-lg uppercase text-pure-white font-bold">Batting Pads (Leg Guards)</h4>
+          <p class="font-body text-xs text-text-muted">High-density plastazote foam and cane rods with ergonomic knee bolsters and padded ankle cups.</p>
+          <button onclick="openQuickQuote('Cricket Equipment', 'Batting Leg Guards')" class="mt-auto text-primary-container font-mono text-xs uppercase font-bold text-left">Quote Leg Guards →</button>
+        </div>
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">front_hand</span>
+          <h4 class="font-headline text-lg uppercase text-pure-white font-bold">Batting Gloves</h4>
+          <p class="font-body text-xs text-text-muted">Pittards sheep leather palms with multi-flex jointed finger inserts and fiber-shield inserts on lead fingers.</p>
+          <button onclick="openQuickQuote('Cricket Equipment', 'Batting Gloves')" class="mt-auto text-primary-container font-mono text-xs uppercase font-bold text-left">Quote Batting Gloves →</button>
+        </div>
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">luggage</span>
+          <h4 class="font-headline text-lg uppercase text-pure-white font-bold">Heavy-Duty Wheelie Kit Bags</h4>
+          <p class="font-body text-xs text-text-muted">1680D ballistic waterproof polyester with triple heavy-duty tractor wheels and external bat cavities.</p>
+          <button onclick="openQuickQuote('Cricket Equipment', 'Kit Bags')" class="mt-auto text-primary-container font-mono text-xs uppercase font-bold text-left">Quote Kit Bags →</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SPORTS GOODS INQUIRY FORM -->
+  <section id="sportsGoodsForm" class="py-20 bg-surface-container-lowest border-b border-border-slate/40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-10">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">Direct Factory Inquiry</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Request Sports Goods Quotation</h2>
+        <p class="font-body text-xs text-text-muted mt-2">
+          Your inquiry is transmitted directly to <strong class="text-primary-container">chahadmaqsood786@gmail.com</strong>.
+        </p>
+      </div>
+
+      <div class="p-8 sm:p-10 rounded-2xl bg-surface-midnight border border-border-slate/80 shadow-2xl">
+        <form id="sportsGoodsInquiryForm" onsubmit="handleSportsGoodsSubmit(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-5 font-mono text-xs">
+          <input type="text" name="_honeypot" style="display:none !important;" tabindex="-1" autocomplete="off"/>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Buyer Name *</label>
+            <input type="text" name="fullName" required placeholder="Tariq Khan" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Club / Brand / Wholesaler Name</label>
+            <input type="text" name="companyName" placeholder="County Cricket Supplies" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Email *</label>
+            <input type="email" name="email" required placeholder="buyer@cricket.com" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Phone / WhatsApp</label>
+            <input type="text" name="phone" placeholder="+44 7911 123456" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Country *</label>
+            <input type="text" name="country" required placeholder="UK / Australia / South Africa / UAE" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Product Line</label>
+            <select name="productName" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none">
+              <option value="156g Senior Leather Balls (Red/White/Pink)">156g Senior Match Leather Balls (4-Piece)</option>
+              <option value="142g Women/Youth Leather Balls">142g Women/Youth Match Leather Balls</option>
+              <option value="135g Junior Leather Balls">135g Junior Match Leather Balls</option>
+              <option value="English Willow Bats (Sizes 0 to 6 & SH)">English Willow Bats (Sizes 0 to 6 & SH)</option>
+              <option value="Kashmir Willow Bats (Club Volume)">Kashmir Willow Bats (Club Volume)</option>
+              <option value="Batting Pads & Gloves Combo">Batting Pads & Gloves Combo</option>
+              <option value="Wheelie Kit Bags">Wheelie Kit Bags</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Target Quantity</label>
+            <input type="text" name="quantity" required placeholder="e.g. 100 Balls / 25 Bats" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Delivery Deadline</label>
+            <input type="date" name="deliveryDate" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="sm:col-span-2 flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Detailed Specifications (Ball color, bat sizes 0-6 or SH, branding) *</label>
+            <textarea name="message" rows="4" required placeholder="Specify ball weights (156g / 142g / 135g), colors (Red, Pink, White), bat sizes required (0 to 6, SH), and custom gold foil brand embossing..." class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"></textarea>
+          </div>
+
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit" class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary-container font-mono text-sm uppercase font-bold shadow-[0_0_24px_rgba(0,229,255,0.45)] hover:bg-primary transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-xl">send</span>
+              <span>Submit Sports Goods Inquiry to Export Desk</span>
+            </button>
+          </div>
+        </form>
+
+        <div id="sportsGoodsSuccess" class="hidden p-6 rounded-xl bg-surface-container-high border border-primary-container/60 shadow-2xl flex flex-col gap-3 mt-6">
+          <div class="flex items-center gap-3 text-tertiary">
+            <span class="material-symbols-outlined text-3xl">verified</span>
+            <span class="font-headline text-lg text-pure-white uppercase font-bold">Sports Goods Inquiry Logged</span>
+          </div>
+          <p class="font-body text-xs text-text-muted">
+            Your inquiry has been emailed directly to <strong class="text-pure-white">chahadmaqsood786@gmail.com</strong>. Wholesale export pricing sent within 2 hours.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="w-full bg-surface-container-lowest border-t border-surface-slate/80 text-on-surface py-12 text-center font-mono text-xs text-text-dim">
+  © 2026 GORSY (PVT) LTD • SPORTS GOODS DIVISION • SIALKOT, PAKISTAN
+</footer>
+
+<!-- MODALS -->
+<div id="quickQuoteModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+  <div class="w-full max-w-lg p-6 rounded-2xl bg-surface-midnight border border-border-slate">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="font-headline text-xl text-pure-white uppercase font-bold">Request Equipment Quote</h3>
+      <button onclick="closeModal('quickQuoteModal')"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <form onsubmit="handleQuickQuote(event)" class="flex flex-col gap-3 font-mono text-xs">
+      <input type="text" id="modalQuoteProduct" name="productName" readonly class="px-3 py-2 rounded bg-surface-slate text-primary-container font-bold border border-border-slate"/>
+      <input type="text" name="name" required placeholder="Name" class="px-3 py-2 rounded bg-surface-container-lowest text-pure-white border border-border-slate"/>
+      <input type="email" name="email" required placeholder="Email" class="px-3 py-2 rounded bg-surface-container-lowest text-pure-white border border-border-slate"/>
+      <textarea name="message" required placeholder="Quantity (e.g. 100 Balls / 20 Bats)..." class="px-3 py-2 rounded bg-surface-container-lowest text-pure-white border border-border-slate"></textarea>
+      <button type="submit" class="py-2.5 rounded bg-primary-container text-on-primary-container font-bold uppercase hover:bg-primary">Send Request</button>
+    </form>
+  </div>
+</div>
+
+<div id="currencyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="w-full max-w-md p-6 rounded-2xl bg-surface-midnight border border-border-slate font-mono text-xs">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="font-headline text-lg text-pure-white uppercase font-bold">Select Currency</h3>
+      <button onclick="closeModal('currencyModal')"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <button onclick="setCurrency('USD', '$', 1.0)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>USD ($)</span><span class="text-primary-container font-bold">$</span></button>
+      <button onclick="setCurrency('EUR', '€', 0.92)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>EUR (€)</span><span class="text-primary-container font-bold">€</span></button>
+      <button onclick="setCurrency('GBP', '£', 0.79)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>GBP (£)</span><span class="text-primary-container font-bold">£</span></button>
+      <button onclick="setCurrency('AED', 'AED ', 3.67)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>AED</span><span class="text-primary-container font-bold">AED</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+<script src="form-handler.js"></script>
+<script>
+  function handleSportsGoodsSubmit(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(e.target, 'SPORTS GOODS', (res) => {
+      document.getElementById('sportsGoodsInquiryForm').classList.add('hidden');
+      document.getElementById('sportsGoodsSuccess').classList.remove('hidden');
+    });
+  }
+  function handleQuickQuote(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(e.target, 'SPORTS GOODS QUOTE', (res) => {
+      closeModal('quickQuoteModal');
+      showToast(`Inquiry sent to chahadmaqsood786@gmail.com!`);
+    });
+  }
+</script>
+</body>
+</html>

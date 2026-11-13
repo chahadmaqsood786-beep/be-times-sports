@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>Private Label Apparel & OEM Branding | GORSY Sialkot</title>
+  <meta name="description" content="Turnkey private label apparel manufacturing. Custom woven labels, heat transfer neck tags, die-cut hangtags, frosted polybags, and custom packaging for global sportswear brands."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00363d",
+            "secondary": "#b4c5ff",
+            "tertiary": "#cdff13",
+            "background": "#0a0e14",
+            "surface-midnight": "#0b111c",
+            "surface-container-lowest": "#06090e",
+            "surface-container-high": "#222732",
+            "surface-slate": "#1e293b",
+            "border-slate": "#334155",
+            "on-surface": "#dfe2eb",
+            "text-muted": "#94a3b8",
+            "text-dim": "#64748b",
+            "pure-white": "#ffffff"
+          },
+          fontFamily: {
+            "headline": ["Oswald", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "mono": ["Space Grotesk", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { background-color: #0a0e14; color: #dfe2eb; overflow-x: hidden; }
+    .bg-tech-grid {
+      background-image: linear-gradient(to right, rgba(30, 41, 59, 0.22) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(30, 41, 59, 0.22) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 flex flex-col bg-surface-midnight/95 backdrop-blur-xl border-b border-surface-slate/60 shadow-xl">
+  <div class="w-full bg-surface-container-lowest border-b border-surface-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-8 flex items-center justify-between font-mono text-xs">
+      <div class="flex items-center gap-2 text-on-surface truncate">
+        <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        <span class="uppercase tracking-wider text-text-muted">GORSY Private Label & OEM Branding Division</span>
+      </div>
+      <div class="flex items-center gap-4 text-text-muted">
+        <button onclick="openModal('currencyModal')" class="flex items-center gap-1 hover:text-primary-container uppercase font-mono text-xs">
+          <span class="navCurrencyLabel">USD ($)</span>
+          <span class="material-symbols-outlined text-xs">expand_more</span>
+        </button>
+        <span class="text-border-slate">|</span>
+        <a href="mailto:chahadmaqsood786@gmail.com" class="text-on-surface hover:text-primary-container font-mono">chahadmaqsood786@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-surface-container-high border border-primary-container/40 flex items-center justify-center p-1.5 shadow-[0_0_12px_rgba(0,229,255,0.25)]">
+        <span class="material-symbols-outlined text-primary-container text-2xl">loyalty</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1.5">
+          <span class="font-headline text-2xl uppercase tracking-wider text-pure-white font-bold leading-none">GORSY</span>
+          <span class="px-1.5 py-0.5 rounded text-[9px] font-mono uppercase bg-primary-container/15 text-primary-container border border-primary-container/30">OEM</span>
+        </div>
+        <span class="font-mono text-[10px] tracking-widest text-text-muted uppercase mt-1">Private Labeling</span>
+      </div>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-1.5 h-full text-xs font-mono uppercase tracking-wider">
+      <a href="index.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Home</a>
+      <a href="sportswear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Sportswear</a>
+      <a href="activewear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Activewear</a>
+      <a href="schoolwear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Schoolwear</a>
+      <a href="sports-goods.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Sports Goods</a>
+      <a href="3d-customizer.html" class="h-full inline-flex items-center gap-1 px-2.5 text-text-muted hover:text-primary-container">
+        <span>3D Studio</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+      </a>
+      <a href="manufacturing.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Manufacturing</a>
+      <a href="private-label.html" class="h-full inline-flex items-center px-2.5 text-primary-container font-bold border-b-2 border-primary-container">Private Label</a>
+      <a href="about.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">About Us</a>
+      <a href="contact.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="tech-pack.html" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase">
+        <span class="material-symbols-outlined text-base">description</span>
+        <span>Tech Pack</span>
+      </a>
+      <a href="#privateLabelForm" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-mono text-xs uppercase font-bold shadow-[0_0_16px_rgba(0,229,255,0.4)] hover:bg-primary transition-all">
+        <span class="material-symbols-outlined text-base">request_quote</span>
+        <span>Brand Quote</span>
+      </a>
+      <button onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded bg-surface-container-high text-on-surface">
+        <span id="mobileMenuIcon" class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden xl:hidden w-full bg-surface-midnight border-b border-border-slate/80 p-6 font-mono text-xs uppercase flex flex-col gap-2">
+    <a href="index.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Home</a>
+    <a href="sportswear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Sportswear</a>
+    <a href="activewear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Activewear</a>
+    <a href="schoolwear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Schoolwear</a>
+    <a href="sports-goods.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Sports Goods</a>
+    <a href="3d-customizer.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">3D Customizer</a>
+    <a href="manufacturing.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Manufacturing</a>
+    <a href="private-label.html" class="py-2.5 px-3 rounded bg-primary-container/10 text-primary-container font-bold">Private Label</a>
+    <a href="about.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">About Us</a>
+    <a href="contact.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Contact</a>
+  </div>
+</header>
+
+<main class="pt-28">
+  <div class="w-full bg-surface-container-lowest border-b border-border-slate/40 py-2.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-2 font-mono text-xs text-text-dim">
+      <a href="index.html" class="hover:text-primary-container">Home</a>
+      <span>/</span>
+      <span class="text-primary-container font-semibold">Private Labeling & OEM Branding</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="py-20 lg:py-24 bg-tech-grid border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container/10 border border-primary-container/30 text-primary-container font-mono text-xs uppercase tracking-widest mb-4">
+          <span class="material-symbols-outlined text-sm">loyalty</span>
+          <span>Turnkey OEM & Private Label Solutions</span>
+        </div>
+        <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl uppercase text-pure-white font-bold leading-none">
+          COMPLETE PRIVATE LABEL <br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-pure-white to-secondary">MANUFACTURING SERVICES</span>
+        </h1>
+        <p class="font-body text-base text-text-muted mt-4 leading-relaxed">
+          Launch and scale your sportswear or activewear brand with complete proprietary packaging. From tagless silicone heat transfers and high-density woven damask neck labels to die-cut hangtags and branded frosted polybags.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 PRIVATE LABEL SERVICES -->
+  <section class="py-20 bg-surface-container-lowest border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col gap-2 mb-12">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold">Brand Architecture</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">8 Dedicated OEM Branding Capabilities</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- 1. Custom Neck Labels -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">sell</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Tagless Neck Labels</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Ultra-soft heat transfer prints directly inside the collar. No itchy labels. Contains brand logo, size, fabric composition, and care icons.
+          </p>
+        </div>
+
+        <!-- 2. Woven Labels -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">texture</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Woven Damask Labels</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            High-density 100D damask jacquard weaving with heat-sealed ultrasonic cut borders that never fray. Center-fold, end-fold, or miter-fold.
+          </p>
+        </div>
+
+        <!-- 3. Printed Labels -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">description</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Printed Satin Care Tags</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Soft black or white satin ribbon with screen printed legal wash instructions, country of origin, RN number, and multi-language disclosures.
+          </p>
+        </div>
+
+        <!-- 4. Hang Tags -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">style</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Die-Cut Hangtags</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            400–600 GSM thick premium cardstock with soft-touch matte lamination, spot UV gloss, gold/silver foil stamping, metal eyelets, and wax cords.
+          </p>
+        </div>
+
+        <!-- 5. Custom Packaging -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">inventory_2</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Frosted Zipper Polybags</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Eco-friendly biodegradable matte frosted zipper bags with your brand emblem printed on the face, air hole vent, and EAN-13 barcoding.
+          </p>
+        </div>
+
+        <!-- 6. Brand Logo Embroidery -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">verified</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">3D Puff Embroidery</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Raised 3D high-density foam embroidery on chest, sleeves, and hoodie hoods using colorfast Japanese Madeira rayon/poly threads.
+          </p>
+        </div>
+
+        <!-- 7. Custom Garment Designs -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">design_services</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Pattern Engineering</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Complete proprietary grading from vector sketches. Sizing matrices tailored specifically to your brand audience (Athletic Slim vs Oversized Streetwear).
+          </p>
+        </div>
+
+        <!-- 8. Private-Label Manufacturing -->
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-3">
+          <span class="material-symbols-outlined text-primary-container text-3xl">handshake</span>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Strict NDA Protection</h3>
+          <p class="font-body text-xs text-text-muted leading-relaxed">
+            Complete non-disclosure protection. Your designs, tech packs, and customer identities are never resold or shared with third parties.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRIVATE LABEL INQUIRY FORM -->
+  <section id="privateLabelForm" class="py-20 bg-background border-b border-border-slate/40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-10">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">Private Label Inquiry</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Start Your Private Label Collection</h2>
+        <p class="font-body text-xs text-text-muted mt-2">
+          Your inquiry is transmitted directly to <strong class="text-primary-container">chahadmaqsood786@gmail.com</strong>.
+        </p>
+      </div>
+
+      <div class="p-8 sm:p-10 rounded-2xl bg-surface-midnight border border-border-slate/80 shadow-2xl">
+        <form id="plInquiryForm" onsubmit="handlePLSubmit(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-5 font-mono text-xs">
+          <input type="text" name="_honeypot" style="display:none !important;" tabindex="-1" autocomplete="off"/>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Brand Founder / Buyer Name *</label>
+            <input type="text" name="fullName" required placeholder="Elena Rostova" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Brand / Company Name *</label>
+            <input type="text" name="companyName" required placeholder="Apex Apparel Co." class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Corporate Email *</label>
+            <input type="email" name="email" required placeholder="elena@apexapparel.com" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Phone / WhatsApp</label>
+            <input type="text" name="phone" placeholder="+1 (415) 555-2671" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Destination Country *</label>
+            <input type="text" name="country" required placeholder="United States / Canada / UK" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Product Line</label>
+            <select name="productName" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none">
+              <option value="Activewear / Gym Brand Launch">Activewear / Gym Brand Launch</option>
+              <option value="Sportswear Teamwear Brand">Sportswear Teamwear Brand</option>
+              <option value="Streetwear Heavyweight Apparel">Streetwear Heavyweight Apparel</option>
+              <option value="Schoolwear Institutional Supply">Schoolwear Institutional Supply</option>
+              <option value="Custom Cricket Equipment Line">Custom Cricket Equipment Line</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Initial Volume</label>
+            <select name="quantity" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none">
+              <option value="100-250 Pcs">100–250 Pcs (Initial Brand Drop)</option>
+              <option value="250-500 Pcs" selected>250–500 Pcs</option>
+              <option value="1000+ Pcs">1,000+ Pcs (Established Brand)</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Target Launch Date</label>
+            <input type="date" name="deliveryDate" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="sm:col-span-2 flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Brand Vision & Packaging Requirements *</label>
+            <textarea name="message" rows="4" required placeholder="Describe your brand identity, requested label types (woven vs tagless), custom zipper polybag specifications, and any reference tech packs..." class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"></textarea>
+          </div>
+
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit" class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary-container font-mono text-sm uppercase font-bold shadow-[0_0_24px_rgba(0,229,255,0.45)] hover:bg-primary transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-xl">send</span>
+              <span>Submit Private Label Inquiry to Export Desk</span>
+            </button>
+          </div>
+        </form>
+
+        <div id="plSuccess" class="hidden p-6 rounded-xl bg-surface-container-high border border-primary-container/60 shadow-2xl flex flex-col gap-3 mt-6">
+          <div class="flex items-center gap-3 text-tertiary">
+            <span class="material-symbols-outlined text-3xl">verified</span>
+            <span class="font-headline text-lg text-pure-white uppercase font-bold">Private Label Dossier Received</span>
+          </div>
+          <p class="font-body text-xs text-text-muted">
+            Transmitted directly to <strong class="text-pure-white">chahadmaqsood786@gmail.com</strong>. Our OEM brand development manager will contact you with sample costs and packaging mockups within 2 hours.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="w-full bg-surface-container-lowest border-t border-surface-slate/80 text-on-surface py-12 text-center font-mono text-xs text-text-dim">
+  © 2026 GORSY (PVT) LTD • OEM & PRIVATE LABEL DIVISION • SIALKOT, PAKISTAN
+</footer>
+
+<div id="currencyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="w-full max-w-md p-6 rounded-2xl bg-surface-midnight border border-border-slate font-mono text-xs">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="font-headline text-lg text-pure-white uppercase font-bold">Select Currency</h3>
+      <button onclick="closeModal('currencyModal')"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <button onclick="setCurrency('USD', '$', 1.0)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>USD ($)</span><span class="text-primary-container font-bold">$</span></button>
+      <button onclick="setCurrency('EUR', '€', 0.92)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>EUR (€)</span><span class="text-primary-container font-bold">€</span></button>
+      <button onclick="setCurrency('GBP', '£', 0.79)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>GBP (£)</span><span class="text-primary-container font-bold">£</span></button>
+      <button onclick="setCurrency('AED', 'AED ', 3.67)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>AED</span><span class="text-primary-container font-bold">AED</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+<script src="form-handler.js"></script>
+<script>
+  function handlePLSubmit(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(e.target, 'PRIVATE LABEL', (res) => {
+      document.getElementById('plInquiryForm').classList.add('hidden');
+      document.getElementById('plSuccess').classList.remove('hidden');
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>Activewear & Fitness Apparel Manufacturing | GORSY Sialkot</title>
+  <meta name="description" content="Wholesale manufacturer of gym t-shirts, compression wear, sports bras, seamless leggings, joggers, and heavyweight hoodies. OEM & Private Label."/>
+
+  <!-- Google Fonts: Oswald, Plus Jakarta Sans, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-bg": "#080D15",
+            "secondary-bg": "#101827",
+            "primary-accent": "#00D9F5",
+            "secondary-accent": "#C6FF00",
+            "pure-white": "#FFFFFF",
+            "secondary-text": "#A8B5C7",
+            "border-dark": "#263448",
+            "card-surface": "#0C1320",
+            "hover-surface": "#141F32"
+          },
+          fontFamily: {
+            "headline": ["Oswald", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "mono": ["Space Grotesk", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #080D15;
+      color: #A8B5C7;
+      overflow-x: hidden;
+    }
+    .bg-tech-grid {
+      background-image: 
+        linear-gradient(to right, rgba(38, 52, 72, 0.28) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(38, 52, 72, 0.28) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .hover-cyan-glow {
+      transition: all 0.25s ease-in-out;
+    }
+    .hover-cyan-glow:hover {
+      border-color: rgba(0, 217, 245, 0.65);
+      box-shadow: 0 10px 30px -8px rgba(0, 217, 245, 0.2);
+      transform: translateY(-2px);
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 75% 35%, rgba(0, 217, 245, 0.08) 0%, transparent 60%);
+    }
+  </style>
+</head>
+<body class="bg-primary-bg font-body text-secondary-text antialiased selection:bg-primary-accent selection:text-primary-bg">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 flex flex-col bg-[#080D15]/95 backdrop-blur-xl border-b border-border-dark/80 shadow-2xl">
+  <!-- Top Utility Bar -->
+  <div class="w-full bg-[#05080E] border-b border-border-dark/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-8 flex items-center justify-between font-mono text-xs">
+      <div class="flex items-center gap-2 text-secondary-text truncate">
+        <span class="w-2 h-2 rounded-full bg-primary-accent animate-pulse"></span>
+        <span class="uppercase tracking-wider text-xs">GORSY Activewear Division • Seamless &amp; 4-Way Stretch Compression</span>
+      </div>
+      <div class="flex items-center gap-4 text-secondary-text">
+        <button onclick="openModal('currencyModal')" class="flex items-center gap-1.5 hover:text-primary-accent transition-colors uppercase font-mono text-xs">
+          <svg class="w-3.5 h-3.5 text-primary-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span class="navCurrencyLabel">USD ($)</span>
+          <svg class="w-3 h-3 text-secondary-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <span class="text-border-dark">|</span>
+        <a href="mailto:chahadmaqsood786@gmail.com" class="hidden sm:flex items-center gap-1.5 text-secondary-text hover:text-primary-accent transition-colors font-mono">
+          <svg class="w-3.5 h-3.5 text-primary-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          <span>chahadmaqsood786@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between gap-4">
+    <!-- Brand Section (Clean Logo Container - No Overlap) -->
+    <a href="index.html" class="flex items-center gap-3.5 group shrink-0">
+      <div class="w-10 h-10 rounded-xl bg-secondary-bg border border-primary-accent/40 flex items-center justify-center p-2 shadow-[0_0_15px_rgba(0,217,245,0.2)] group-hover:border-primary-accent transition-all">
+        <!-- Crisp Dumbbell / Athletic SVG Icon -->
+        <svg class="w-5 h-5 text-primary-accent group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 5v14M18 5v14M3 8v8M21 8v8M6 12h12"/>
+        </svg>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-2">
+          <span class="font-headline text-2xl uppercase tracking-wider text-pure-white font-bold leading-none">GORSY</span>
+          <span class="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-primary-accent/10 text-primary-accent border border-primary-accent/30 font-semibold">ACTIVEWEAR</span>
+        </div>
+        <span class="font-mono text-[10px] tracking-widest text-secondary-text uppercase mt-1">Performance &amp; Gymwear</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links (No wrapping, clean cyan active indicator) -->
+    <nav class="hidden xl:flex items-center gap-1 2xl:gap-2 h-full text-xs font-mono uppercase tracking-wider text-pure-white">
+      <a href="index.html" class="h-full inline-flex items-center px-2.5 text-secondary-text hover:text-primary-accent transition-colors">Home</a>
+      <a href="sportswear.html" class="h-full inline-flex items-center px-2.5 text-secondary-text hover:text-primary-accent transition-colors">Sportswear</a>
+      <a href="activewear.html" class="h-full inline-flex items-center px-2.5 text-primary-accent font-bold border-b-2 border-primary-accent shadow-[0_2px_10px_rgba(0,217,245,0.3)]">Activewear</a>
+      <a href="schoolwear.html" class="h-full inline-flex items-center px-2.5 text-secondary-text hover:text-primary-accent transition-colors">Schoolwear</a>
+      <a href="sports-goods.html" class="h-full inline-flex items-center px-2.5 text-secondary-text hover:text-primary-accent transition-colors">Sports Goods</a>
+      <a href="3d-customizer.html" class="h-full inline-flex items-center gap-1.5 px-2.5 text-secondary-text hover:text-primary-accent transition-colors">
+        <span>3D Studio</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-primary-accent animate-ping"></span>
+      </a>
+      <a href="manufacturing.html" class="h-full inline-flex items-center px-2.5 text-secondary-text hover:text-primary-accent transition-colors">Manufacturing</a>
+      <a href="about.html" class="h-full inline-flex items-center px-2.5 text-secondary-text hover:text-primary-accent transition-colors">About Us</a>
+      <a href="contact.html" class="h-full inline-flex items-center px-2.5 text-secondary-text hover:text-primary-accent transition-colors">Contact</a>
+    </nav>
+
+    <!-- Header Actions (Tech Pack & Launch 3D with proper SVG icons) -->
+    <div class="flex items-center gap-3">
+      <a href="tech-pack.html" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg bg-secondary-bg text-pure-white border border-border-dark hover:border-primary-accent font-mono text-xs uppercase tracking-wider transition-all">
+        <svg class="w-4 h-4 text-primary-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+        <span>Tech Pack</span>
+      </a>
+
+      <a href="3d-customizer.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary-accent text-primary-bg font-headline uppercase font-bold text-xs tracking-wider shadow-[0_0_20px_rgba(0,217,245,0.4)] hover:bg-white hover:shadow-[0_0_25px_rgba(0,217,245,0.7)] transition-all">
+        <!-- 3D Cube SVG -->
+        <svg class="w-4 h-4 text-primary-bg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+        </svg>
+        <span>Launch 3D</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button onclick="toggleMobileMenu()" class="xl:hidden p-2.5 rounded-lg bg-secondary-bg text-pure-white border border-border-dark hover:border-primary-accent transition-colors" aria-label="Toggle Mobile Menu">
+        <svg id="mobileMenuIconSvg" class="w-5 h-5 text-primary-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileMenu" class="hidden xl:hidden w-full bg-[#080D15]/98 border-t border-border-dark/80 px-6 py-6 font-mono text-xs uppercase flex flex-col gap-2.5 shadow-2xl">
+    <a href="index.html" class="py-2.5 px-3 rounded-lg hover:bg-secondary-bg hover:text-primary-accent text-secondary-text transition-colors">Home</a>
+    <a href="sportswear.html" class="py-2.5 px-3 rounded-lg hover:bg-secondary-bg hover:text-primary-accent text-secondary-text transition-colors">Sportswear</a>
+    <a href="activewear.html" class="py-2.5 px-3 rounded-lg bg-primary-accent/10 text-primary-accent font-bold border-l-2 border-primary-accent">Activewear</a>
+    <a href="schoolwear.html" class="py-2.5 px-3 rounded-lg hover:bg-secondary-bg hover:text-primary-accent text-secondary-text transition-colors">Schoolwear</a>
+    <a href="sports-goods.html" class="py-2.5 px-3 rounded-lg hover:bg-secondary-bg hover:text-primary-accent text-secondary-text transition-colors">Sports Goods</a>
+    <a href="3d-customizer.html" class="py-2.5 px-3 rounded-lg hover:bg-secondary-bg hover:text-primary-accent text-secondary-text transition-colors flex items-center justify-between">
+      <span>3D Garment Studio</span>
+      <span class="px-2 py-0.5 text-[9px] rounded bg-primary-accent text-primary-bg font-bold">WebGL</span>
+    </a>
+    <a href="manufacturing.html" class="py-2.5 px-3 rounded-lg hover:bg-secondary-bg hover:text-primary-accent text-secondary-text transition-colors">Manufacturing &amp; Facility</a>
+    <a href="about.html" class="py-2.5 px-3 rounded-lg hover:bg-secondary-bg hover:text-primary-accent text-secondary-text transition-colors">About Us &amp; Ethics</a>
+    <a href="contact.html" class="py-2.5 px-3 rounded-lg hover:bg-secondary-bg hover:text-primary-accent text-secondary-text transition-colors">Contact Export Desk</a>
+    <div class="pt-4 mt-2 border-t border-border-dark/60 flex flex-col gap-2">
+      <a href="tech-pack.html" class="w-full py-3 rounded-lg bg-secondary-bg border border-border-dark text-pure-white text-center font-bold">Submit Tech Pack</a>
+      <a href="#activewearForm" onclick="closeMobileMenu()" class="w-full py-3 rounded-lg bg-primary-accent text-primary-bg text-center font-bold">Request Fast Quote</a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-28">
+  <!-- BREADCRUMB -->
+  <div class="w-full bg-[#05080E] border-b border-border-dark/40 py-2.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-2 font-mono text-xs text-secondary-text">
+      <a href="index.html" class="hover:text-primary-accent transition-colors">Home</a>
+      <span class="text-border-dark">/</span>
+      <span class="text-primary-accent font-semibold">Activewear &amp; Fitness Apparel</span>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="py-16 sm:py-20 lg:py-24 bg-tech-grid hero-glow border-b border-border-dark/60 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        
+        <!-- Left Column: Copy & Actions -->
+        <div class="lg:col-span-7 flex flex-col gap-6">
+          
+          <!-- Category Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-secondary-bg border border-primary-accent/30 text-primary-accent font-mono text-xs uppercase tracking-widest w-fit shadow-sm">
+            <svg class="w-3.5 h-3.5 text-primary-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 5v14M18 5v14M3 8v8M21 8v8M6 12h12"/>
+            </svg>
+            <span class="font-semibold">Performance Engineered Activewear</span>
+          </div>
+
+          <!-- Headline with Athletic Condensation & Cyan Gradient -->
+          <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl xl:text-7xl uppercase text-pure-white font-bold leading-[1.05] tracking-tight">
+            ENGINEERED ACTIVEWEAR &amp; <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-accent via-pure-white to-primary-accent">FITNESS APPAREL</span>
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="font-body text-base sm:text-lg text-secondary-text max-w-xl leading-relaxed">
+            From high-waist squat-proof seamless leggings and compression rashguards to 380 GSM heavyweight French Terry streetwear hoodies. Custom silicone branding, reflective accents, and private labeling.
+          </p>
+
+          <!-- 3 UPGRADED SPECIFICATION CARDS -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
+            
+            <!-- Card 1: Elasticity -->
+            <div class="p-4 rounded-xl bg-secondary-bg border border-border-dark hover-cyan-glow flex flex-col justify-between h-28">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono text-secondary-text uppercase tracking-wider">ELASTICITY</span>
+                <span class="w-2 h-2 rounded-full bg-primary-accent"></span>
+              </div>
+              <div>
+                <span class="font-headline text-2xl text-primary-accent font-bold tracking-wide block">4-Way Stretch</span>
+                <span class="font-mono text-[10px] text-secondary-text">360° Non-sheer recovery</span>
+              </div>
+            </div>
+
+            <!-- Card 2: Outerwear GSM -->
+            <div class="p-4 rounded-xl bg-secondary-bg border border-border-dark hover-cyan-glow flex flex-col justify-between h-28">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono text-secondary-text uppercase tracking-wider">OUTERWEAR GSM</span>
+                <span class="w-2 h-2 rounded-full bg-secondary-accent"></span>
+              </div>
+              <div>
+                <span class="font-headline text-2xl text-secondary-accent font-bold tracking-wide block">380 GSM Fleece</span>
+                <span class="font-mono text-[10px] text-secondary-text">Heavy French Terry knit</span>
+              </div>
+            </div>
+
+            <!-- Card 3: Seam Integrity -->
+            <div class="p-4 rounded-xl bg-secondary-bg border border-border-dark hover-cyan-glow flex flex-col justify-between h-28">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono text-secondary-text uppercase tracking-wider">SEAM INTEGRITY</span>
+                <span class="w-2 h-2 rounded-full bg-pure-white"></span>
+              </div>
+              <div>
+                <span class="font-headline text-2xl text-pure-white font-bold tracking-wide block">6-Thread Flatlock</span>
+                <span class="font-mono text-[10px] text-secondary-text">Anti-friction flat seams</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-3">
+            <a href="#activewearForm" class="px-8 py-4 rounded-xl bg-primary-accent text-primary-bg font-headline uppercase font-bold text-xs tracking-widest shadow-[0_0_25px_rgba(0,217,245,0.4)] hover:bg-white hover:shadow-[0_0_30px_rgba(0,217,245,0.7)] transition-all flex items-center gap-2 group">
+              <span>REQUEST ACTIVEWEAR QUOTE</span>
+              <svg class="w-4 h-4 text-primary-bg group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+            <a href="private-label.html" class="px-7 py-4 rounded-xl bg-secondary-bg text-pure-white border border-border-dark hover:border-primary-accent font-headline uppercase font-bold text-xs tracking-widest transition-all">
+              Private Label Options
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Hero Campaign Photography (Premium Editorial Image) -->
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-2xl overflow-hidden border border-border-dark bg-secondary-bg p-2 shadow-2xl relative">
+            <div class="rounded-xl overflow-hidden relative h-[440px] sm:h-[480px]">
+              <img 
+                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1400&auto=format&fit=crop" 
+                alt="Activewear Fitness Apparel Manufacturing Campaign" 
+                class="w-full h-full object-cover object-center filter contrast-105 brightness-95"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#080D15] via-transparent to-transparent opacity-60"></div>
+              
+              <!-- Floating Specification Badge -->
+              <div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-[#080D15]/90 backdrop-blur-md border border-border-dark flex items-center justify-between font-mono text-xs">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-primary-accent animate-pulse"></span>
+                  <span class="text-pure-white font-semibold">OEM Batch Production</span>
+                </div>
+                <span class="text-secondary-accent font-bold">MOQ: 100 Pcs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 ACTIVEWEAR PRODUCTS CATALOG GRID -->
+  <section class="py-20 bg-[#05080E] border-b border-border-dark/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <div class="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-primary-accent font-bold mb-2">
+            <span class="w-2 h-2 rounded-full bg-primary-accent"></span>
+            <span>Fitness Division Manufacturing Lines</span>
+          </div>
+          <h2 class="font-headline text-3xl sm:text-5xl uppercase text-pure-white font-bold tracking-wide">
+            10 ACTIVEWEAR &amp; GYM PRODUCTS
+          </h2>
+        </div>
+        <p class="font-body text-xs sm:text-sm text-secondary-text max-w-md">
+          Tested for tensile stretch recovery, squat-proof opacity, flatlock friction resistance, and moisture dissipation. Bespoke brand colorways available.
+        </p>
+      </div>
+
+      <!-- 10 Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+        
+        <!-- 1. Gym T-Shirts -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600&auto=format&fit=crop" alt="Gym T-shirts" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-primary-accent border border-primary-accent/30 font-bold">MOQ 100</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Gym T-Shirts</h3>
+          <p class="font-body text-xs text-secondary-text">Athletic scalloped hem, raglan cut, breathable cotton-elastane or micro-poly blend.</p>
+          <button onclick="openQuickQuote('Activewear', 'Gym T-Shirts')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- 2. Training Shirts -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?q=80&w=600&auto=format&fit=crop" alt="Training Shirts" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-primary-accent border border-primary-accent/30 font-bold">MOQ 100</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Training Shirts</h3>
+          <p class="font-body text-xs text-secondary-text">Laser-cut ventilation micro-perforations across spine and chest heat zones.</p>
+          <button onclick="openQuickQuote('Activewear', 'Training Shirts')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- 3. Heavyweight Hoodies -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=600&auto=format&fit=crop" alt="Streetwear Hoodies" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-secondary-accent border border-secondary-accent/30 font-bold">380 GSM</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Streetwear Hoodies</h3>
+          <p class="font-body text-xs text-secondary-text">380–420 GSM brushed French Terry, double-layered hood, kangaroo pouch pocket.</p>
+          <button onclick="openQuickQuote('Activewear', 'Heavyweight Hoodies')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- 4. Performance Joggers -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?q=80&w=600&auto=format&fit=crop" alt="Performance Joggers" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-primary-accent border border-primary-accent/30 font-bold">MOQ 100</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Performance Joggers</h3>
+          <p class="font-body text-xs text-secondary-text">Tapered ergonomic athletic fit, deep zippered phone pockets, thick elastic rib cuff.</p>
+          <button onclick="openQuickQuote('Activewear', 'Performance Joggers')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- 5. Seamless Leggings -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=600&auto=format&fit=crop" alt="Seamless Leggings" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-primary-accent border border-primary-accent/30 font-bold">Squat-Proof</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Seamless Leggings</h3>
+          <p class="font-body text-xs text-secondary-text">High-waist compressive ribbed band, zero front seam, 100% squat-proof opacity.</p>
+          <button onclick="openQuickQuote('Activewear', 'Seamless Leggings')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- 6. Sports Bras -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=600&auto=format&fit=crop" alt="Sports Bras" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-primary-accent border border-primary-accent/30 font-bold">High Support</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Sports Bras</h3>
+          <p class="font-body text-xs text-secondary-text">High-support racerback design with removable molded padding cups and underbust ribbing.</p>
+          <button onclick="openQuickQuote('Activewear', 'Sports Bras')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- 7. Fitness Wear Sets -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1483721074577-8329623377a0?q=80&w=600&auto=format&fit=crop" alt="Fitness Wear Sets" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-primary-accent border border-primary-accent/30 font-bold">2-Piece</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Fitness 2-Piece Sets</h3>
+          <p class="font-body text-xs text-secondary-text">Color-coordinated sports bra and high-waist shorts/leggings bundles with private label.</p>
+          <button onclick="openQuickQuote('Activewear', 'Fitness 2-Piece Sets')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- 8. Performance Quarter-Zips -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop" alt="Performance Outerwear" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-primary-accent border border-primary-accent/30 font-bold">Quarter-Zip</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Quarter-Zip Pullovers</h3>
+          <p class="font-body text-xs text-secondary-text">Lightweight thermal athletic pullovers with chin guard zipper garages and thumbhole cuffs.</p>
+          <button onclick="openQuickQuote('Activewear', 'Quarter-Zip Pullovers')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- 9. Compression Wear -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=600&auto=format&fit=crop" alt="Compression Rashguards" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-primary-accent border border-primary-accent/30 font-bold">240 GSM</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Compression Rashguards</h3>
+          <p class="font-body text-xs text-secondary-text">240 GSM Poly-Spandex graduated compression, flatlock seams, anti-slip waistband silicone grip.</p>
+          <button onclick="openQuickQuote('Activewear', 'Compression Rashguards')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- 10. Athletic Shorts -->
+        <div class="p-4 rounded-xl bg-card-surface border border-border-dark hover-cyan-glow flex flex-col gap-3">
+          <div class="w-full h-44 rounded-lg overflow-hidden bg-secondary-bg relative">
+            <img src="https://images.unsplash.com/photo-1551854838-212c50b4c184?q=80&w=600&auto=format&fit=crop" alt="Athletic Shorts" class="w-full h-full object-cover"/>
+            <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-[#080D15]/80 text-primary-accent border border-primary-accent/30 font-bold">2-in-1</span>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">2-in-1 Gym Shorts</h3>
+          <p class="font-body text-xs text-secondary-text">Outer lightweight woven shell with inner compression liner holding a concealed phone pocket.</p>
+          <button onclick="openQuickQuote('Activewear', '2-in-1 Gym Shorts')" class="mt-auto font-mono text-xs uppercase text-primary-accent hover:text-white font-bold flex items-center justify-between pt-3 border-t border-border-dark transition-colors">
+            <span>Request Quote</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACTIVEWEAR INQUIRY FORM (Connected with Web3Forms & chahadmaqsood786@gmail.com) -->
+  <section id="activewearForm" class="py-20 bg-primary-bg border-b border-border-dark/60 bg-tech-grid">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-primary-accent/10 border border-primary-accent/30 text-primary-accent font-mono text-xs uppercase font-bold mb-3">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          <span>DIRECT FACTORY RFQ</span>
+        </div>
+        <h2 class="font-headline text-3xl sm:text-5xl uppercase text-pure-white font-bold tracking-wide">
+          REQUEST ACTIVEWEAR QUOTATION
+        </h2>
+        <p class="font-body text-xs sm:text-sm text-secondary-text mt-3">
+          Your inquiry is transmitted directly to our export operations desk at <strong class="text-primary-accent font-mono">chahadmaqsood786@gmail.com</strong>.
+        </p>
+      </div>
+
+      <div class="p-8 sm:p-10 rounded-2xl bg-secondary-bg border border-border-dark shadow-2xl">
+        <form id="activewearInquiryForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleActivewearSubmit(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-5 font-mono text-xs">
+          <!-- Web3Forms Access Key Integration -->
+          <input type="hidden" name="access_key" value="b7591b70-367a-4f8a-b228-2f6103d28b58"/>
+          <input type="hidden" name="subject" value="NEW ACTIVEWEAR INQUIRY - GORSY SIALKOT"/>
+          <input type="hidden" name="from_name" value="GORSY Activewear Desk"/>
+          <input type="text" name="_honeypot" style="display:none !important;" tabindex="-1" autocomplete="off"/>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-secondary-text uppercase">Your Full Name *</label>
+            <input type="text" name="name" required placeholder="Alex Turner" class="px-4 py-3 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-secondary-text uppercase">Brand / Company Name</label>
+            <input type="text" name="company" placeholder="Fitness Brand LLC" class="px-4 py-3 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-secondary-text uppercase">Corporate Email *</label>
+            <input type="email" name="email" required placeholder="alex@brand.com" class="px-4 py-3 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-secondary-text uppercase">Phone / WhatsApp</label>
+            <input type="text" name="phone" placeholder="+1 (555) 000-1122" class="px-4 py-3 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-secondary-text uppercase">Destination Country *</label>
+            <input type="text" name="country" required placeholder="USA / Canada / Australia / UK" class="px-4 py-3 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-secondary-text uppercase">Product Line</label>
+            <select name="product" class="px-4 py-3 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none">
+              <option value="Seamless Leggings">Seamless Leggings</option>
+              <option value="Gym T-Shirts & Stringers">Gym T-Shirts &amp; Stringers</option>
+              <option value="Streetwear Heavyweight Hoodies">Streetwear Heavyweight Hoodies (380 GSM)</option>
+              <option value="Sports Bras & Crop Tops">Sports Bras &amp; Crop Tops</option>
+              <option value="Performance Joggers">Performance Joggers</option>
+              <option value="Compression Rashguards">Compression Rashguards</option>
+              <option value="2-in-1 Athletic Shorts">2-in-1 Athletic Shorts</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-secondary-text uppercase">Target Quantity *</label>
+            <select name="quantity" class="px-4 py-3 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none">
+              <option value="100-250 Pcs">100–250 Pcs (Initial Brand Launch)</option>
+              <option value="250-500 Pcs" selected>250–500 Pcs (Standard Run)</option>
+              <option value="500-1000 Pcs">500–1,000 Pcs</option>
+              <option value="1000+ Pcs">1,000+ Pcs (Container Consignment)</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-secondary-text uppercase">Required Delivery Date</label>
+            <input type="date" name="deliveryDate" class="px-4 py-3 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"/>
+          </div>
+
+          <div class="sm:col-span-2 flex flex-col gap-1.5">
+            <label class="text-secondary-text uppercase">Branding &amp; Specifications *</label>
+            <textarea name="message" rows="4" required placeholder="Specify fabric composition (e.g. 75% Nylon 25% Spandex), silicone logo placements, woven label requirements..." class="px-4 py-3 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"></textarea>
+          </div>
+
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit" id="activewearSubmitBtn" class="w-full py-4 px-6 rounded-xl bg-primary-accent text-primary-bg font-headline text-sm uppercase font-bold tracking-widest shadow-[0_0_24px_rgba(0,217,245,0.45)] hover:bg-white hover:shadow-[0_0_30px_rgba(0,217,245,0.7)] transition-all flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-primary-bg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+              </svg>
+              <span>Submit Activewear Inquiry to Export Desk</span>
+            </button>
+          </div>
+        </form>
+
+        <div id="activewearSuccess" class="hidden p-6 rounded-xl bg-card-surface border border-primary-accent/60 shadow-2xl flex flex-col gap-3 mt-6">
+          <div class="flex items-center gap-3 text-secondary-accent">
+            <svg class="w-8 h-8 text-secondary-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span class="font-headline text-lg text-pure-white uppercase font-bold">Activewear Dossier Transmitted</span>
+          </div>
+          <p class="font-body text-xs text-secondary-text">
+            Your inquiry has been emailed directly to <strong class="text-pure-white">chahadmaqsood786@gmail.com</strong>. Proforma quotation and lab dip schedule sent within 2 hours.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="w-full bg-[#05080E] border-t border-border-dark/80 text-secondary-text py-12 text-center font-mono text-xs">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-2">
+      <span class="font-headline text-lg uppercase text-pure-white font-bold">GORSY</span>
+      <span class="text-border-dark">•</span>
+      <span>ACTIVEWEAR &amp; GYMWEAR DIVISION</span>
+    </div>
+    <div>
+      © 2026 GORSY (PVT) LTD • EXPORT OPERATIONS DESK • SIALKOT, PAKISTAN
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="sitemap.xml" class="hover:text-primary-accent transition-colors">SITEMAP</a>
+      <span>•</span>
+      <a href="robots.txt" class="hover:text-primary-accent transition-colors">ROBOTS</a>
+    </div>
+  </div>
+</footer>
+
+<!-- QUICK QUOTE MODAL (With Clean SVG Icons) -->
+<div id="quickQuoteModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+  <div class="w-full max-w-lg p-6 sm:p-8 rounded-2xl bg-secondary-bg border border-border-dark shadow-2xl relative">
+    <div class="flex justify-between items-center mb-6 pb-3 border-b border-border-dark">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-primary-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+        <h3 class="font-headline text-xl text-pure-white uppercase font-bold">Request Fast Activewear Quote</h3>
+      </div>
+      <button onclick="closeModal('quickQuoteModal')" class="text-secondary-text hover:text-white p-1 rounded-lg">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <form id="modalQuoteForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleQuickQuote(event)" class="flex flex-col gap-4 font-mono text-xs">
+      <input type="hidden" name="access_key" value="b7591b70-367a-4f8a-b228-2f6103d28b58"/>
+      <input type="hidden" name="subject" value="QUICK ACTIVEWEAR QUOTE - GORSY SIALKOT"/>
+      <input type="hidden" name="from_name" value="GORSY Website Desk"/>
+      
+      <div>
+        <label class="block uppercase text-secondary-text mb-1">Target Product</label>
+        <input type="text" id="modalQuoteProduct" name="product" readonly class="w-full px-3.5 py-2.5 rounded-lg bg-card-surface text-primary-accent font-bold border border-border-dark"/>
+      </div>
+      <div>
+        <label class="block uppercase text-secondary-text mb-1">Your Name *</label>
+        <input type="text" name="name" required placeholder="Alex Turner" class="w-full px-3.5 py-2.5 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"/>
+      </div>
+      <div>
+        <label class="block uppercase text-secondary-text mb-1">Corporate Email *</label>
+        <input type="email" name="email" required placeholder="alex@brand.com" class="w-full px-3.5 py-2.5 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"/>
+      </div>
+      <div>
+        <label class="block uppercase text-secondary-text mb-1">Requirements &amp; Target Quantity *</label>
+        <textarea name="message" required rows="3" placeholder="Quantities, sizes, target ship date..." class="w-full px-3.5 py-2.5 rounded-lg bg-card-surface text-pure-white border border-border-dark focus:border-primary-accent focus:outline-none"></textarea>
+      </div>
+      <button type="submit" class="py-3 rounded-xl bg-primary-accent text-primary-bg font-headline text-xs font-bold uppercase tracking-wider hover:bg-white transition-all mt-1">
+        Send Instant RFQ
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- CURRENCY MODAL (With Clean SVG Icons) -->
+<div id="currencyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="w-full max-w-md p-6 rounded-2xl bg-secondary-bg border border-border-dark font-mono text-xs shadow-2xl">
+    <div class="flex justify-between items-center mb-4 pb-3 border-b border-border-dark">
+      <h3 class="font-headline text-lg text-pure-white uppercase font-bold">Select Display Currency</h3>
+      <button onclick="closeModal('currencyModal')" class="text-secondary-text hover:text-white">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="grid grid-cols-2 gap-2.5">
+      <button onclick="setCurrency('USD', '$ ', 1.0)" class="p-3 rounded-lg bg-card-surface hover:bg-hover-surface border border-border-dark text-left flex justify-between items-center transition-all">
+        <span class="text-pure-white font-medium">USD ($)</span>
+        <span class="text-primary-accent font-bold">$</span>
+      </button>
+      <button onclick="setCurrency('EUR', '€ ', 0.92)" class="p-3 rounded-lg bg-card-surface hover:bg-hover-surface border border-border-dark text-left flex justify-between items-center transition-all">
+        <span class="text-pure-white font-medium">EUR (€)</span>
+        <span class="text-primary-accent font-bold">€</span>
+      </button>
+      <button onclick="setCurrency('GBP', '£ ', 0.79)" class="p-3 rounded-lg bg-card-surface hover:bg-hover-surface border border-border-dark text-left flex justify-between items-center transition-all">
+        <span class="text-pure-white font-medium">GBP (£)</span>
+        <span class="text-primary-accent font-bold">£</span>
+      </button>
+      <button onclick="setCurrency('AED', 'AED ', 3.67)" class="p-3 rounded-lg bg-card-surface hover:bg-hover-surface border border-border-dark text-left flex justify-between items-center transition-all">
+        <span class="text-pure-white font-medium">AED</span>
+        <span class="text-primary-accent font-bold">AED</span>
+      </button>
+      <button onclick="setCurrency('CAD', 'CA$ ', 1.36)" class="p-3 rounded-lg bg-card-surface hover:bg-hover-surface border border-border-dark text-left flex justify-between items-center transition-all">
+        <span class="text-pure-white font-medium">CAD (CA$)</span>
+        <span class="text-primary-accent font-bold">CA$</span>
+      </button>
+      <button onclick="setCurrency('PKR', 'Rs ', 278.5)" class="p-3 rounded-lg bg-card-surface hover:bg-hover-surface border border-border-dark text-left flex justify-between items-center transition-all">
+        <span class="text-pure-white font-medium">PKR (Rs)</span>
+        <span class="text-primary-accent font-bold">PKR</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+<script src="form-handler.js"></script>
+<script>
+  // Mobile drawer toggle handler with SVG icon switch
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const iconContainer = document.getElementById('mobileMenuIconSvg');
+    if (!menu) return;
+    const isHidden = menu.classList.toggle('hidden');
+    if (iconContainer) {
+      if (isHidden) {
+        // Hamburger icon
+        iconContainer.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>';
+      } else {
+        // Close X icon
+        iconContainer.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>';
+      }
+    }
+  }
+
+  function closeMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const iconContainer = document.getElementById('mobileMenuIconSvg');
+    if (menu) menu.classList.add('hidden');
+    if (iconContainer) {
+      iconContainer.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>';
+    }
+  }
+
+  function handleActivewearSubmit(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(e.target, 'ACTIVEWEAR', (res) => {
+      document.getElementById('activewearInquiryForm').classList.add('hidden');
+      document.getElementById('activewearSuccess').classList.remove('hidden');
+    });
+  }
+
+  function handleQuickQuote(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(e.target, 'ACTIVEWEAR QUOTE', (res) => {
+      closeModal('quickQuoteModal');
+      showToast('Inquiry sent to chahadmaqsood786@gmail.com!', 'success');
+    });
+  }
+</script>
+</body>
+</html>

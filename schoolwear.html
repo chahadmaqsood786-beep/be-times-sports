@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>Schoolwear & Academy Uniform Manufacturing | GORSY Sialkot</title>
+  <meta name="description" content="Global export manufacturer of school polo shirts, Teflon-coated trousers, embroidered sweatshirts, school hoodies, tracksuits, blazers, and complete academy uniforms."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00363d",
+            "secondary": "#b4c5ff",
+            "tertiary": "#cdff13",
+            "background": "#0a0e14",
+            "surface-midnight": "#0b111c",
+            "surface-container-lowest": "#06090e",
+            "surface-container-high": "#222732",
+            "surface-slate": "#1e293b",
+            "border-slate": "#334155",
+            "on-surface": "#dfe2eb",
+            "text-muted": "#94a3b8",
+            "text-dim": "#64748b",
+            "pure-white": "#ffffff"
+          },
+          fontFamily: {
+            "headline": ["Oswald", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "mono": ["Space Grotesk", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { background-color: #0a0e14; color: #dfe2eb; overflow-x: hidden; }
+    .bg-tech-grid {
+      background-image: linear-gradient(to right, rgba(30, 41, 59, 0.22) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(30, 41, 59, 0.22) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .hover-cyan-glow:hover {
+      border-color: rgba(0, 229, 255, 0.7);
+      box-shadow: 0 8px 30px -4px rgba(0, 229, 255, 0.22);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 flex flex-col bg-surface-midnight/95 backdrop-blur-xl border-b border-surface-slate/60 shadow-xl">
+  <div class="w-full bg-surface-container-lowest border-b border-surface-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-8 flex items-center justify-between font-mono text-xs">
+      <div class="flex items-center gap-2 text-on-surface truncate">
+        <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        <span class="uppercase tracking-wider text-text-muted">GORSY Schoolwear Division • High Durability School Uniforms & Private Labeling</span>
+      </div>
+      <div class="flex items-center gap-4 text-text-muted">
+        <button onclick="openModal('currencyModal')" class="flex items-center gap-1 hover:text-primary-container transition-colors uppercase font-mono text-xs">
+          <span class="navCurrencyLabel">USD ($)</span>
+          <span class="material-symbols-outlined text-xs">expand_more</span>
+        </button>
+        <span class="text-border-slate">|</span>
+        <a href="mailto:chahadmaqsood786@gmail.com" class="text-on-surface hover:text-primary-container font-mono">chahadmaqsood786@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-surface-container-high border border-primary-container/40 flex items-center justify-center p-1.5 shadow-[0_0_12px_rgba(0,229,255,0.25)]">
+        <span class="material-symbols-outlined text-primary-container text-2xl">school</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1.5">
+          <span class="font-headline text-2xl uppercase tracking-wider text-pure-white font-bold leading-none">GORSY</span>
+          <span class="px-1.5 py-0.5 rounded text-[9px] font-mono uppercase bg-primary-container/15 text-primary-container border border-primary-container/30">SCHOOL</span>
+        </div>
+        <span class="font-mono text-[10px] tracking-widest text-text-muted uppercase mt-1">Academy & Institution Uniforms</span>
+      </div>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-1.5 h-full text-xs font-mono uppercase tracking-wider">
+      <a href="index.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Home</a>
+      <a href="sportswear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Sportswear</a>
+      <a href="activewear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Activewear</a>
+      <a href="schoolwear.html" class="h-full inline-flex items-center px-2.5 text-primary-container font-bold border-b-2 border-primary-container">Schoolwear</a>
+      <a href="sports-goods.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Sports Goods</a>
+      <a href="3d-customizer.html" class="h-full inline-flex items-center gap-1 px-2.5 text-text-muted hover:text-primary-container">
+        <span>3D Studio</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+      </a>
+      <a href="manufacturing.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Manufacturing</a>
+      <a href="about.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">About Us</a>
+      <a href="contact.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="tech-pack.html" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase">
+        <span class="material-symbols-outlined text-base">description</span>
+        <span>Tech Pack</span>
+      </a>
+      <a href="#schoolForm" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-mono text-xs uppercase font-bold shadow-[0_0_16px_rgba(0,229,255,0.4)] hover:bg-primary transition-all">
+        <span class="material-symbols-outlined text-base">request_quote</span>
+        <span>School Tender Quote</span>
+      </a>
+      <button onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded bg-surface-container-high text-on-surface">
+        <span id="mobileMenuIcon" class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden xl:hidden w-full bg-surface-midnight border-b border-border-slate/80 p-6 font-mono text-xs uppercase flex flex-col gap-2">
+    <a href="index.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Home</a>
+    <a href="sportswear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Sportswear</a>
+    <a href="activewear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Activewear</a>
+    <a href="schoolwear.html" class="py-2.5 px-3 rounded bg-primary-container/10 text-primary-container font-bold">Schoolwear Division</a>
+    <a href="sports-goods.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Sports Goods</a>
+    <a href="3d-customizer.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">3D Customizer</a>
+    <a href="manufacturing.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Manufacturing</a>
+    <a href="private-label.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Private Label</a>
+    <a href="about.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">About Us</a>
+    <a href="contact.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Contact</a>
+  </div>
+</header>
+
+<main class="pt-28">
+  <!-- BREADCRUMB -->
+  <div class="w-full bg-surface-container-lowest border-b border-border-slate/40 py-2.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-2 font-mono text-xs text-text-dim">
+      <a href="index.html" class="hover:text-primary-container">Home</a>
+      <span>/</span>
+      <span class="text-primary-container font-semibold">Schoolwear & Academy Uniforms</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="py-20 lg:py-24 bg-tech-grid border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 flex flex-col gap-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container/10 border border-primary-container/30 text-primary-container font-mono text-xs uppercase tracking-widest w-fit">
+            <span class="material-symbols-outlined text-sm">verified</span>
+            <span>Institutional Grade Schoolwear & Academy Supply</span>
+          </div>
+
+          <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl uppercase text-pure-white font-bold leading-none">
+            INSTITUTIONAL SCHOOLWEAR & <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-pure-white to-secondary">ACADEMY UNIFORMS</span>
+          </h1>
+
+          <p class="font-body text-base text-text-muted max-w-xl leading-relaxed">
+            Manufactured to endure 100+ rigorous industrial laundry wash cycles. Premium pique polo shirts, Teflon-coated stain-resistant trousers, embroidered fleece sweatshirts, and complete schoolwear bundles for wholesale uniform distributors and academies.
+          </p>
+
+          <div class="grid grid-cols-3 gap-3 pt-2 font-mono">
+            <div class="p-3 rounded-lg bg-surface-midnight border border-border-slate">
+              <span class="text-[10px] text-text-dim uppercase block">Polo Fabric</span>
+              <span class="font-headline text-lg text-primary-container font-bold">210 GSM Pique</span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-midnight border border-border-slate">
+              <span class="text-[10px] text-text-dim uppercase block">Stain Protection</span>
+              <span class="font-headline text-lg text-tertiary font-bold">Teflon Coated</span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-midnight border border-border-slate">
+              <span class="text-[10px] text-text-dim uppercase block">Embroidery</span>
+              <span class="font-headline text-lg text-pure-white font-bold">Tajima 15-Color</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#schoolForm" class="px-7 py-4 rounded-lg bg-primary-container text-on-primary-container font-mono text-xs uppercase font-bold shadow-[0_0_20px_rgba(0,229,255,0.4)] hover:bg-primary transition-all">
+              Request Schoolwear Quotation
+            </a>
+            <a href="tech-pack.html" class="px-7 py-4 rounded-lg bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase transition-all">
+              Submit School Spec Sheet
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-2xl overflow-hidden border border-border-slate/80 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop" alt="Schoolwear Manufacturing Sialkot" class="w-full h-[450px] object-cover"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 SCHOOLWEAR LINES -->
+  <section class="py-20 bg-surface-container-lowest border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">Uniform Catalog</span>
+          <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">7 Dedicated Schoolwear Product Lines</h2>
+        </div>
+        <p class="font-body text-xs text-text-muted max-w-md">
+          Standard UK, EU, and US school uniform size grading with reinforced stress-point bar-tacking and anti-pilling fabric treatments.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- 1. School Polo Shirts -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-slate">
+            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=600&auto=format&fit=crop" alt="School Polo Shirts" class="w-full h-full object-cover"/>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">School Polo Shirts</h3>
+          <p class="font-body text-xs text-text-muted">210 GSM 65% Polyester 35% Ring-Spun Cotton pique knit. Flat knit collar with taped neckband and 3-button placket.</p>
+          <div class="mt-auto pt-2 border-t border-border-slate flex justify-between font-mono text-xs">
+            <span class="text-tertiary">MOQ: 100 Pcs</span>
+            <button onclick="openQuickQuote('Schoolwear', 'School Polo Shirts')" class="text-primary-container hover:text-primary font-bold">Quote →</button>
+          </div>
+        </div>
+
+        <!-- 2. School Trousers -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-slate">
+            <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=600&auto=format&fit=crop" alt="School Trousers" class="w-full h-full object-cover"/>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">School Trousers & Shorts</h3>
+          <p class="font-body text-xs text-text-muted">Teflon-coated stain-repellent twill (65% Poly 35% Viscose). Adjustable internal waist elastic and reinforced double knees.</p>
+          <div class="mt-auto pt-2 border-t border-border-slate flex justify-between font-mono text-xs">
+            <span class="text-tertiary">MOQ: 100 Pcs</span>
+            <button onclick="openQuickQuote('Schoolwear', 'School Trousers')" class="text-primary-container hover:text-primary font-bold">Quote →</button>
+          </div>
+        </div>
+
+        <!-- 3. School Sweatshirts -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-slate">
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=600&auto=format&fit=crop" alt="School Sweatshirts" class="w-full h-full object-cover"/>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">School Sweatshirts</h3>
+          <p class="font-body text-xs text-text-muted">280–320 GSM brushed fleece with crew neck. Heavy 1x1 rib knit cuffs and waistband with Lycra elastane retention.</p>
+          <div class="mt-auto pt-2 border-t border-border-slate flex justify-between font-mono text-xs">
+            <span class="text-tertiary">MOQ: 100 Pcs</span>
+            <button onclick="openQuickQuote('Schoolwear', 'School Sweatshirts')" class="text-primary-container hover:text-primary font-bold">Quote →</button>
+          </div>
+        </div>
+
+        <!-- 4. School Hoodies & Leavers Hoodies -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-slate">
+            <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=600&auto=format&fit=crop" alt="School Hoodies" class="w-full h-full object-cover"/>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">School Hoodies & Leavers</h3>
+          <p class="font-body text-xs text-text-muted">320 GSM fleece, kangaroo front pocket, double-lined hood. Custom screen printed graduation student names roster on back.</p>
+          <div class="mt-auto pt-2 border-t border-border-slate flex justify-between font-mono text-xs">
+            <span class="text-tertiary">MOQ: 50 Pcs</span>
+            <button onclick="openQuickQuote('Schoolwear', 'School Hoodies & Leavers')" class="text-primary-container hover:text-primary font-bold">Quote →</button>
+          </div>
+        </div>
+
+        <!-- 5. School Tracksuits & PE Kits -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-slate">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop" alt="School Tracksuits" class="w-full h-full object-cover"/>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">PE Tracksuits & Gym Kits</h3>
+          <p class="font-body text-xs text-text-muted">Full-zip micro-peach tricot track jacket and track pants. Complete with school house colors and embroidered crest.</p>
+          <div class="mt-auto pt-2 border-t border-border-slate flex justify-between font-mono text-xs">
+            <span class="text-tertiary">MOQ: 50 Sets</span>
+            <button onclick="openQuickQuote('Schoolwear', 'PE Tracksuits & Gym Kits')" class="text-primary-container hover:text-primary font-bold">Quote →</button>
+          </div>
+        </div>
+
+        <!-- 6. School Blazers & Jackets -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate hover-cyan-glow flex flex-col gap-4">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-slate">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600&auto=format&fit=crop" alt="School Blazers" class="w-full h-full object-cover"/>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">School Blazers & Jackets</h3>
+          <p class="font-body text-xs text-text-muted">Fully lined institutional blazers with chest pocket embroidery crest, brass/plastic embossed buttons, internal zipped pockets.</p>
+          <div class="mt-auto pt-2 border-t border-border-slate flex justify-between font-mono text-xs">
+            <span class="text-tertiary">MOQ: 50 Pcs</span>
+            <button onclick="openQuickQuote('Schoolwear', 'School Blazers & Jackets')" class="text-primary-container hover:text-primary font-bold">Quote →</button>
+          </div>
+        </div>
+
+        <!-- 7. Complete School Uniform Bundles -->
+        <div class="p-5 rounded-xl bg-surface-midnight border border-border-slate hover-cyan-glow flex flex-col gap-4 sm:col-span-2">
+          <div class="w-full h-48 rounded-lg overflow-hidden bg-surface-slate">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop" alt="Complete School Uniform Bundles" class="w-full h-full object-cover"/>
+          </div>
+          <h3 class="font-headline text-lg uppercase text-pure-white font-bold">Complete Academy Uniform Bundles</h3>
+          <p class="font-body text-xs text-text-muted">Turnkey contract manufacturing: Polos, trousers, knitwear, and PE kit packaged in individual student size packs with barcoded tags for direct school distribution.</p>
+          <div class="mt-auto pt-2 border-t border-border-slate flex justify-between font-mono text-xs">
+            <span class="text-tertiary">Full School Supply</span>
+            <button onclick="openQuickQuote('Schoolwear', 'Complete Academy Uniform Bundles')" class="text-primary-container hover:text-primary font-bold">Tender Inquiry →</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS & INSTITUTIONAL CAPABILITIES -->
+  <section class="py-20 bg-background border-b border-border-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">Institutional Standards</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Why Schools & Wholesalers Partner With GORSY</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-2">
+          <span class="material-symbols-outlined text-primary-container text-3xl">verified</span>
+          <h4 class="font-headline text-lg uppercase text-pure-white font-bold">Custom Crest Embroidery</h4>
+          <p class="font-body text-xs text-text-muted">Tajima high-density stitching preserves fine Latin motto typography and multi-color school crest heraldry without distortion.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-2">
+          <span class="material-symbols-outlined text-primary-container text-3xl">straighten</span>
+          <h4 class="font-headline text-lg uppercase text-pure-white font-bold">Precise Age Grading</h4>
+          <p class="font-body text-xs text-text-muted">Graded for Age 3–4 up to Adult XXL. Conforms to UK schoolwear, European sizing, and US institutional standards.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-2">
+          <span class="material-symbols-outlined text-primary-container text-3xl">local_shipping</span>
+          <h4 class="font-headline text-lg uppercase text-pure-white font-bold">Worldwide School Export</h4>
+          <p class="font-body text-xs text-text-muted">Direct scheduled container consignments and express air shipments to UK, EU, Gulf GCC countries, Canada, and Australia.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate flex flex-col gap-2">
+          <span class="material-symbols-outlined text-primary-container text-3xl">inventory_2</span>
+          <h4 class="font-headline text-lg uppercase text-pure-white font-bold">Private Label Packaging</h4>
+          <p class="font-body text-xs text-text-muted">Branded woven damask neck labels, heat-seal wash care tags with laundry symbols, and individual EAN-13 barcoded polybags.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SCHOOLWEAR INQUIRY FORM -->
+  <section id="schoolForm" class="py-20 bg-surface-container-lowest border-b border-border-slate/40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-10">
+        <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold block mb-2">Institutional Tender & Wholesale</span>
+        <h2 class="font-headline text-3xl sm:text-4xl uppercase text-pure-white font-bold">Request Schoolwear Quotation</h2>
+        <p class="font-body text-xs text-text-muted mt-2">
+          Direct dispatch to <strong class="text-primary-container">chahadmaqsood786@gmail.com</strong>.
+        </p>
+      </div>
+
+      <div class="p-8 sm:p-10 rounded-2xl bg-surface-midnight border border-border-slate/80 shadow-2xl">
+        <form id="schoolwearInquiryForm" onsubmit="handleSchoolwearSubmit(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-5 font-mono text-xs">
+          <input type="text" name="_honeypot" style="display:none !important;" tabindex="-1" autocomplete="off"/>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Representative / Buyer Name *</label>
+            <input type="text" name="fullName" required placeholder="John Davies" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">School / Academy / Distributor Name</label>
+            <input type="text" name="companyName" placeholder="St. Edwards Academy" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Email *</label>
+            <input type="email" name="email" required placeholder="uniforms@academy.edu" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Phone / WhatsApp</label>
+            <input type="text" name="phone" placeholder="+44 20 7946 0991" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Country *</label>
+            <input type="text" name="country" required placeholder="United Kingdom / Ireland / UAE" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Uniform Category</label>
+            <select name="productName" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none">
+              <option value="School Polo Shirts (210 GSM)">School Polo Shirts (210 GSM Pique)</option>
+              <option value="Teflon Coated School Trousers">Teflon Coated School Trousers</option>
+              <option value="School Sweatshirts & Jumpers">School Sweatshirts & Jumpers</option>
+              <option value="School Hoodies & Leavers Hoodies">School Hoodies & Leavers Hoodies</option>
+              <option value="PE Tracksuits & Athletic Kits">PE Tracksuits & Athletic Kits</option>
+              <option value="School Blazers & Outerwear">School Blazers & Outerwear</option>
+              <option value="Complete Academy Uniform Tender">Complete Academy Uniform Tender</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Volume Requirement</label>
+            <select name="quantity" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none">
+              <option value="100-300 Pcs">100–300 Pcs</option>
+              <option value="500-1000 Pcs" selected>500–1,000 Pcs</option>
+              <option value="2500+ Pcs">2,500+ Pcs (Annual Tender)</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Required Delivery Deadline</label>
+            <input type="date" name="deliveryDate" class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"/>
+          </div>
+
+          <div class="sm:col-span-2 flex flex-col gap-1.5">
+            <label class="text-text-muted uppercase">Embossing, Crest & Sizing Breakdown *</label>
+            <textarea name="message" rows="4" required placeholder="Specify school colors, embroidery stitch count, fabric blend (e.g. 65/35 poly-cotton), size distribution, and private label requests..." class="px-4 py-3 rounded-lg bg-surface-container-lowest text-pure-white border border-border-slate focus:border-primary-container focus:outline-none"></textarea>
+          </div>
+
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit" class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary-container font-mono text-sm uppercase font-bold shadow-[0_0_24px_rgba(0,229,255,0.45)] hover:bg-primary transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-xl">send</span>
+              <span>Submit Schoolwear Dossier to Export Desk</span>
+            </button>
+          </div>
+        </form>
+
+        <div id="schoolSuccess" class="hidden p-6 rounded-xl bg-surface-container-high border border-primary-container/60 shadow-2xl flex flex-col gap-3 mt-6">
+          <div class="flex items-center gap-3 text-tertiary">
+            <span class="material-symbols-outlined text-3xl">verified</span>
+            <span class="font-headline text-lg text-pure-white uppercase font-bold">Schoolwear Tender Registered</span>
+          </div>
+          <p class="font-body text-xs text-text-muted">
+            Your schoolwear specification has been emailed directly to <strong class="text-pure-white">chahadmaqsood786@gmail.com</strong>. Official wholesale quotation and sample dispatch timeline sent within 2 hours.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="w-full bg-surface-container-lowest border-t border-surface-slate/80 text-on-surface py-12 text-center font-mono text-xs text-text-dim">
+  © 2026 GORSY (PVT) LTD • SCHOOLWEAR DIVISION • SIALKOT, PAKISTAN
+</footer>
+
+<!-- MODALS -->
+<div id="quickQuoteModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+  <div class="w-full max-w-lg p-6 rounded-2xl bg-surface-midnight border border-border-slate">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="font-headline text-xl text-pure-white uppercase font-bold">Request Schoolwear Quote</h3>
+      <button onclick="closeModal('quickQuoteModal')"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <form onsubmit="handleQuickQuote(event)" class="flex flex-col gap-3 font-mono text-xs">
+      <input type="text" id="modalQuoteProduct" name="productName" readonly class="px-3 py-2 rounded bg-surface-slate text-primary-container font-bold border border-border-slate"/>
+      <input type="text" name="name" required placeholder="Name" class="px-3 py-2 rounded bg-surface-container-lowest text-pure-white border border-border-slate"/>
+      <input type="email" name="email" required placeholder="Email" class="px-3 py-2 rounded bg-surface-container-lowest text-pure-white border border-border-slate"/>
+      <textarea name="message" required placeholder="Quantity & sizing requirements..." class="px-3 py-2 rounded bg-surface-container-lowest text-pure-white border border-border-slate"></textarea>
+      <button type="submit" class="py-2.5 rounded bg-primary-container text-on-primary-container font-bold uppercase hover:bg-primary">Send Request</button>
+    </form>
+  </div>
+</div>
+
+<div id="currencyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="w-full max-w-md p-6 rounded-2xl bg-surface-midnight border border-border-slate font-mono text-xs">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="font-headline text-lg text-pure-white uppercase font-bold">Select Currency</h3>
+      <button onclick="closeModal('currencyModal')"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <button onclick="setCurrency('USD', '$', 1.0)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>USD ($)</span><span class="text-primary-container font-bold">$</span></button>
+      <button onclick="setCurrency('EUR', '€', 0.92)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>EUR (€)</span><span class="text-primary-container font-bold">€</span></button>
+      <button onclick="setCurrency('GBP', '£', 0.79)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>GBP (£)</span><span class="text-primary-container font-bold">£</span></button>
+      <button onclick="setCurrency('AED', 'AED ', 3.67)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>AED</span><span class="text-primary-container font-bold">AED</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+<script src="form-handler.js"></script>
+<script>
+  function handleSchoolwearSubmit(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(e.target, 'SCHOOLWEAR', (res) => {
+      document.getElementById('schoolwearInquiryForm').classList.add('hidden');
+      document.getElementById('schoolSuccess').classList.remove('hidden');
+    });
+  }
+  function handleQuickQuote(e) {
+    e.preventDefault();
+    GORSY_API.submitInquiry(e.target, 'SCHOOLWEAR QUOTE', (res) => {
+      closeModal('quickQuoteModal');
+      showToast(`Inquiry sent to chahadmaqsood786@gmail.com!`);
+    });
+  }
+</script>
+</body>
+</html>

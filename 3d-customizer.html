@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>3D Garment Customization Studio | GORSY Sialkot</title>
+  <meta name="description" content="Real-time WebGL 3D sportswear customizer. Build custom football jerseys, cricket polos, basketball uniforms, and heavyweight hoodies with instant Tech Pack export."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+
+  <!-- Three.js & OrbitControls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#c3f5ff",
+            "primary-container": "#00e5ff",
+            "on-primary-container": "#00363d",
+            "secondary": "#b4c5ff",
+            "tertiary": "#cdff13",
+            "background": "#0a0e14",
+            "surface-midnight": "#0b111c",
+            "surface-container-lowest": "#06090e",
+            "surface-container-low": "#12161e",
+            "surface-container-high": "#222732",
+            "surface-slate": "#1e293b",
+            "border-slate": "#334155",
+            "on-surface": "#dfe2eb",
+            "text-muted": "#94a3b8",
+            "text-dim": "#64748b",
+            "pure-white": "#ffffff"
+          },
+          fontFamily: {
+            "headline": ["Oswald", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "mono": ["Space Grotesk", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { background-color: #0a0e14; color: #dfe2eb; overflow-x: hidden; }
+    .bg-tech-grid {
+      background-image: linear-gradient(to right, rgba(30, 41, 59, 0.22) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(30, 41, 59, 0.22) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .glass-hud {
+      background: rgba(11, 17, 28, 0.90);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    #canvas-container { width: 100%; height: 100%; touch-action: none; user-select: none; }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 flex flex-col bg-surface-midnight/95 backdrop-blur-xl border-b border-surface-slate/60 shadow-xl">
+  <div class="w-full bg-surface-container-lowest border-b border-surface-slate/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-8 flex items-center justify-between font-mono text-xs">
+      <div class="flex items-center gap-2 text-on-surface truncate">
+        <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        <span class="uppercase tracking-wider text-text-muted">Interactive WebGL 3D Prototyping Studio • GORSY Sialkot</span>
+      </div>
+      <div class="flex items-center gap-4 text-text-muted">
+        <button onclick="openModal('currencyModal')" class="flex items-center gap-1 hover:text-primary-container uppercase font-mono text-xs">
+          <span class="navCurrencyLabel">USD ($)</span>
+          <span class="material-symbols-outlined text-xs">expand_more</span>
+        </button>
+        <span class="text-border-slate">|</span>
+        <a href="mailto:chahadmaqsood786@gmail.com" class="text-on-surface hover:text-primary-container font-mono">chahadmaqsood786@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-surface-container-high border border-primary-container/40 flex items-center justify-center p-1.5 shadow-[0_0_12px_rgba(0,229,255,0.25)]">
+        <span class="material-symbols-outlined text-primary-container text-2xl">view_in_ar</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1.5">
+          <span class="font-headline text-2xl uppercase tracking-wider text-pure-white font-bold leading-none">GORSY</span>
+          <span class="px-1.5 py-0.5 rounded text-[9px] font-mono uppercase bg-primary-container/15 text-primary-container border border-primary-container/30">3D</span>
+        </div>
+        <span class="font-mono text-[10px] tracking-widest text-text-muted uppercase mt-1">Customizer Studio</span>
+      </div>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-1.5 h-full text-xs font-mono uppercase tracking-wider">
+      <a href="index.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Home</a>
+      <a href="sportswear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Sportswear</a>
+      <a href="activewear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Activewear</a>
+      <a href="schoolwear.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Schoolwear</a>
+      <a href="sports-goods.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Sports Goods</a>
+      <a href="3d-customizer.html" class="h-full inline-flex items-center px-2.5 text-primary-container font-bold border-b-2 border-primary-container">3D Customizer</a>
+      <a href="manufacturing.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Manufacturing</a>
+      <a href="about.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">About Us</a>
+      <a href="contact.html" class="h-full inline-flex items-center px-2.5 text-text-muted hover:text-primary-container">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <button onclick="resetCustomizer()" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase">
+        <span class="material-symbols-outlined text-sm">restart_alt</span>
+        <span>Reset</span>
+      </button>
+      <button onclick="generateTechPackPDF()" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-mono text-xs uppercase font-bold shadow-[0_0_16px_rgba(0,229,255,0.4)] hover:bg-primary transition-all">
+        <span class="material-symbols-outlined text-base">download</span>
+        <span>Download 3D Tech Pack</span>
+      </button>
+      <button onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded bg-surface-container-high text-on-surface">
+        <span id="mobileMenuIcon" class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden xl:hidden w-full bg-surface-midnight border-b border-border-slate/80 p-6 font-mono text-xs uppercase flex flex-col gap-2">
+    <a href="index.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Home</a>
+    <a href="sportswear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Sportswear</a>
+    <a href="activewear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Activewear</a>
+    <a href="schoolwear.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Schoolwear</a>
+    <a href="sports-goods.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Sports Goods</a>
+    <a href="3d-customizer.html" class="py-2.5 px-3 rounded bg-primary-container/10 text-primary-container font-bold">3D Customizer</a>
+    <a href="manufacturing.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Manufacturing</a>
+    <a href="private-label.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Private Label</a>
+    <a href="about.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">About Us</a>
+    <a href="contact.html" class="py-2.5 px-3 rounded hover:bg-surface-slate">Contact</a>
+  </div>
+</header>
+
+<main class="pt-28">
+  <div class="w-full bg-surface-container-lowest border-b border-border-slate/40 py-2.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-2 font-mono text-xs text-text-dim">
+      <a href="index.html" class="hover:text-primary-container">Home</a>
+      <span>/</span>
+      <span class="text-primary-container font-semibold">3D Customization Studio</span>
+    </div>
+  </div>
+
+  <!-- EMBED DEDICATED 3D CUSTOMIZER STUDIO (Full Section) -->
+  <section class="relative w-full py-10 bg-surface-container-lowest min-h-[calc(100vh-160px)]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <!-- Studio Header -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span>
+            <span class="font-mono text-xs uppercase tracking-widest text-primary-container font-bold">Live WebGL 2.0 Engine</span>
+          </div>
+          <h1 class="font-headline text-3xl sm:text-5xl uppercase text-pure-white font-bold leading-tight">
+            3D Garment Customization <span class="text-primary-container">Studio</span>
+          </h1>
+          <p class="font-body text-xs text-text-muted max-w-xl mt-1">
+            Configure real 3D models with anatomical garment construction, realistic fabric weave shaders, 5 independent color zones, and direct factory costing.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button onclick="resetCustomizer()" class="px-4 py-2 rounded bg-surface-slate text-pure-white border border-border-slate hover:border-primary-container font-mono text-xs uppercase flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">restart_alt</span>
+            <span>Reset Factory Specs</span>
+          </button>
+          <button onclick="generateTechPackPDF()" class="px-4 py-2 rounded bg-primary-container text-on-primary-container font-mono text-xs uppercase font-bold shadow-md hover:bg-primary transition-all flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">download</span>
+            <span>Download Spec Sheet</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Customizer Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        
+        <!-- 3D VIEWPORT CANVAS (8 Cols) -->
+        <div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-4">
+          <div class="relative w-full h-[520px] sm:h-[620px] lg:h-[680px] rounded-xl overflow-hidden bg-gradient-to-b from-surface-midnight via-surface-container-lowest to-surface-midnight border border-border-slate/80 shadow-2xl flex items-center justify-center">
+            
+            <div class="absolute inset-0 pointer-events-none opacity-15 bg-tech-grid"></div>
+            <div id="canvas-container" class="w-full h-full cursor-grab active:cursor-grabbing"></div>
+
+            <!-- HUD Overlay (Top-Left) -->
+            <div class="absolute top-4 left-4 pointer-events-none z-10 flex flex-col gap-1.5 glass-hud px-3.5 py-2.5 rounded-lg border border-primary-container/30 font-mono">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+                <span id="hudGarmentName" class="text-xs font-bold text-pure-white uppercase tracking-wider">PRO SOCCER JERSEY</span>
+              </div>
+              <div class="flex items-center gap-3 text-[11px] text-text-muted">
+                <span>FABRIC: <span id="hudFabricType" class="text-primary-container font-semibold">160 GSM INTERLOCK</span></span>
+                <span>•</span>
+                <span>VIEW: <span id="hudCameraAngle" class="text-tertiary font-semibold">3/4 ANGLE</span></span>
+              </div>
+            </div>
+
+            <!-- HUD Overlay (Top-Right) -->
+            <div class="absolute top-4 right-4 pointer-events-none z-10 hidden sm:flex flex-col items-end gap-1 glass-hud px-3 py-2 rounded-lg border border-border-slate font-mono">
+              <span class="text-[10px] text-text-dim uppercase tracking-widest">REALTIME 3D RENDER</span>
+              <span class="text-xs text-pure-white flex items-center gap-1">
+                <span class="text-tertiary">WebGL 2.0</span> • 60 FPS
+              </span>
+            </div>
+
+            <!-- CAMERA TOOLBAR HUD (Bottom-Center) -->
+            <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 glass-hud px-3 py-2 rounded-full border border-primary-container/40 shadow-[0_8px_32px_rgba(0,0,0,0.6)] flex items-center gap-1 sm:gap-1.5 max-w-[95%] overflow-x-auto font-mono text-xs">
+              <button onclick="setCameraView('front')" id="camBtn-front" class="px-2.5 py-1.5 rounded-full text-pure-white bg-surface-slate hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center gap-1 shrink-0" title="Front Elevation">
+                <span class="material-symbols-outlined text-sm">view_carousel</span>
+                <span>Front</span>
+              </button>
+              <button onclick="setCameraView('back')" id="camBtn-back" class="px-2.5 py-1.5 rounded-full text-text-muted hover:text-pure-white hover:bg-surface-slate transition-all flex items-center gap-1 shrink-0" title="Back View">
+                <span class="material-symbols-outlined text-sm">flip</span>
+                <span>Back</span>
+              </button>
+              <button onclick="setCameraView('left')" id="camBtn-left" class="px-2.5 py-1.5 rounded-full text-text-muted hover:text-pure-white hover:bg-surface-slate transition-all flex items-center gap-1 shrink-0" title="Left Flank">
+                <span class="material-symbols-outlined text-sm">arrow_left</span>
+                <span class="hidden sm:inline">Left</span>
+              </button>
+              <button onclick="setCameraView('right')" id="camBtn-right" class="px-2.5 py-1.5 rounded-full text-text-muted hover:text-pure-white hover:bg-surface-slate transition-all flex items-center gap-1 shrink-0" title="Right Flank">
+                <span class="material-symbols-outlined text-sm">arrow_right</span>
+                <span class="hidden sm:inline">Right</span>
+              </button>
+              <button onclick="setCameraView('iso')" id="camBtn-iso" class="px-2.5 py-1.5 rounded-full text-pure-white bg-primary-container/30 border border-primary-container flex items-center gap-1 shrink-0" title="3/4 Dynamic Angle">
+                <span class="material-symbols-outlined text-sm">3d_rotation</span>
+                <span>3/4</span>
+              </button>
+              <button onclick="setCameraView('collar')" id="camBtn-collar" class="px-2.5 py-1.5 rounded-full text-text-muted hover:text-pure-white hover:bg-surface-slate transition-all flex items-center gap-1 shrink-0" title="Collar Zoom">
+                <span class="material-symbols-outlined text-sm">zoom_in</span>
+                <span class="hidden sm:inline">Collar</span>
+              </button>
+
+              <div class="h-4 w-px bg-border-slate mx-1 shrink-0"></div>
+
+              <button onclick="zoomCamera(-0.4)" class="p-1.5 rounded-full text-text-muted hover:text-primary-container hover:bg-surface-slate shrink-0" title="Zoom In (+)">
+                <span class="material-symbols-outlined text-base">add</span>
+              </button>
+              <button onclick="zoomCamera(0.4)" class="p-1.5 rounded-full text-text-muted hover:text-primary-container hover:bg-surface-slate shrink-0" title="Zoom Out (-)">
+                <span class="material-symbols-outlined text-base">remove</span>
+              </button>
+              <button onclick="resetCamera()" class="p-1.5 rounded-full text-text-muted hover:text-tertiary hover:bg-surface-slate shrink-0" title="Reset Camera">
+                <span class="material-symbols-outlined text-base">center_focus_strong</span>
+              </button>
+              <button onclick="toggleAutoRotate()" id="btnAutoRotate" class="p-1.5 rounded-full text-primary-container bg-primary-container/20 border border-primary-container/40 shrink-0" title="Toggle Auto-Rotate">
+                <span class="material-symbols-outlined text-base">sync</span>
+              </button>
+              <button onclick="toggleWireframe()" id="btnWireframe" class="p-1.5 rounded-full text-text-muted hover:text-tertiary hover:bg-surface-slate shrink-0" title="Toggle CAD Wireframe">
+                <span class="material-symbols-outlined text-base">grid_4x4</span>
+              </button>
+            </div>
+
+            <div class="absolute bottom-2 right-4 pointer-events-none hidden md:block text-[10px] font-mono text-text-dim">
+              Drag to Orbit • Scroll to Zoom
+            </div>
+          </div>
+
+          <!-- Bottom Ribbon -->
+          <div class="p-4 rounded-xl bg-surface-midnight border border-border-slate/80 shadow-lg flex flex-wrap items-center justify-between gap-4 font-mono">
+            <div class="flex items-center gap-4">
+              <div class="flex flex-col">
+                <span class="text-[10px] uppercase text-text-dim">Configured SKU</span>
+                <span id="customSkuCode" class="text-sm font-bold text-primary-container">GOR-3D-SOC-1049</span>
+              </div>
+              <div class="h-8 w-px bg-border-slate"></div>
+              <div class="flex flex-col">
+                <span class="text-[10px] uppercase text-text-dim">Estimated Unit Price</span>
+                <span id="customUnitPrice" class="font-headline text-lg font-bold text-pure-white">$11.80 / pc</span>
+              </div>
+              <div class="h-8 w-px bg-border-slate hidden sm:block"></div>
+              <div class="hidden sm:flex flex-col">
+                <span class="text-[10px] uppercase text-text-dim">Production Turnaround</span>
+                <span class="text-sm text-tertiary font-bold">12–14 Business Days</span>
+              </div>
+            </div>
+
+            <button onclick="requestQuoteFrom3D()" class="px-5 py-2.5 rounded bg-primary-container text-on-primary-container text-xs uppercase font-bold shadow-[0_0_16px_rgba(0,229,255,0.4)] hover:bg-primary transition-all flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-base">request_quote</span>
+              <span>Inquire This Build</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CONFIGURATION CONTROL DECK (5 Cols) -->
+        <div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-4 font-mono">
+          <div class="p-6 rounded-xl bg-surface-midnight border border-border-slate/80 shadow-2xl flex flex-col gap-6">
+            
+            <!-- Segmented Tabs -->
+            <div class="grid grid-cols-5 gap-1 p-1 bg-surface-container-lowest rounded-lg border border-border-slate/60 text-center text-[11px] uppercase tracking-wider">
+              <button onclick="switchConfigTab('garment')" id="tabBtn-garment" class="config-tab py-2 rounded font-bold transition-all text-on-primary-container bg-primary-container shadow-sm">Garment</button>
+              <button onclick="switchConfigTab('color')" id="tabBtn-color" class="config-tab py-2 rounded text-text-muted hover:text-pure-white transition-all">Colors</button>
+              <button onclick="switchConfigTab('pattern')" id="tabBtn-pattern" class="config-tab py-2 rounded text-text-muted hover:text-pure-white transition-all">Graphic</button>
+              <button onclick="switchConfigTab('identity')" id="tabBtn-identity" class="config-tab py-2 rounded text-text-muted hover:text-pure-white transition-all">Identity</button>
+              <button onclick="switchConfigTab('pricing')" id="tabBtn-pricing" class="config-tab py-2 rounded text-text-muted hover:text-pure-white transition-all">Quote</button>
+            </div>
+
+            <!-- TAB 1: GARMENT TYPE & FABRIC -->
+            <div id="tabContent-garment" class="tab-pane flex flex-col gap-4">
+              <span class="text-xs uppercase tracking-wider text-primary-container font-bold">Select Apparel Silhouette</span>
+              <div class="grid grid-cols-2 gap-2.5">
+                <button onclick="setGarmentType('soccer')" id="garmentBtn-soccer" class="garment-choice p-3 rounded-lg bg-surface-slate border border-primary-container text-left flex flex-col gap-1 transition-all">
+                  <span class="font-headline text-sm uppercase font-semibold text-pure-white">Pro Soccer Jersey</span>
+                  <span class="text-[10px] text-text-muted">V-Neck & Raglan Cut</span>
+                </button>
+                <button onclick="setGarmentType('cricket')" id="garmentBtn-cricket" class="garment-choice p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex flex-col gap-1 hover:border-primary-container transition-all">
+                  <span class="font-headline text-sm uppercase font-semibold text-pure-white">Cricket Whites / T20</span>
+                  <span class="text-[10px] text-text-muted">Polo Collar Button Placket</span>
+                </button>
+                <button onclick="setGarmentType('basketball')" id="garmentBtn-basketball" class="garment-choice p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex flex-col gap-1 hover:border-primary-container transition-all">
+                  <span class="font-headline text-sm uppercase font-semibold text-pure-white">Basketball Uniform</span>
+                  <span class="text-[10px] text-text-muted">Deep Armholes & Shorts</span>
+                </button>
+                <button onclick="setGarmentType('hoodie')" id="garmentBtn-hoodie" class="garment-choice p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex flex-col gap-1 hover:border-primary-container transition-all">
+                  <span class="font-headline text-sm uppercase font-semibold text-pure-white">Streetwear Hoodie</span>
+                  <span class="text-[10px] text-text-muted">Fleece, 3D Hood & Pocket</span>
+                </button>
+              </div>
+
+              <div class="flex flex-col gap-1.5 pt-2 border-t border-border-slate/60">
+                <label class="text-xs uppercase text-text-muted">Performance Fabric Specification</label>
+                <select id="fabricSelect" onchange="updateFabricSpec(this.value)" class="w-full px-3 py-2.5 rounded bg-surface-container-lowest text-pure-white text-xs border border-border-slate focus:border-primary-container focus:outline-none">
+                  <option value="160|AeroPoly Interlock|interlock|AeroPoly Interlock">160 GSM — AeroPoly Interlock (Match Jersey)</option>
+                  <option value="180|Diamond Micro Mesh|mesh|Micro Mesh">180 GSM — Diamond Micro Mesh (Ventilated)</option>
+                  <option value="210|Polyester Pique Weave|pique|Poly Pique">210 GSM — Polyester Pique (Textured Polo Knit)</option>
+                  <option value="240|4-Way Poly-Spandex|spandex|Poly-Spandex">240 GSM — 4-Way Poly-Spandex (Athletic Stretch)</option>
+                  <option value="380|Heavyweight Brushed French Terry|fleece|Heavy Fleece">380 GSM — Heavyweight Brushed French Terry (Hoodie)</option>
+                  <option value="320|Cotton-Poly Athletic Fleece|fleece|Cotton Fleece">320 GSM — Cotton-Poly Fleece (Classic Trackwear)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- TAB 2: COLORS & TRIMS -->
+            <div id="tabContent-color" class="tab-pane hidden flex flex-col gap-5">
+              <span class="text-xs uppercase tracking-wider text-primary-container font-bold">5 Independent Real-Time Color Zones</span>
+              
+              <div class="grid grid-cols-3 gap-2">
+                <button onclick="applyColorway('#00e5ff', '#0a0e14', '#ffffff', '#00e5ff', '#ffffff', '#cdff13')" class="p-2 rounded bg-surface-container-low border border-border-slate hover:border-primary-container text-left flex items-center gap-1.5 text-[10px]">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#00e5ff] shrink-0"></span><span>Cyan</span>
+                </button>
+                <button onclick="applyColorway('#cdff13', '#1e293b', '#00e5ff', '#cdff13', '#1e293b', '#0a0e14')" class="p-2 rounded bg-surface-container-low border border-border-slate hover:border-primary-container text-left flex items-center gap-1.5 text-[10px]">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#cdff13] shrink-0"></span><span>Volt</span>
+                </button>
+                <button onclick="applyColorway('#c81822', '#ffffff', '#0a0e14', '#c81822', '#ffffff', '#d89c33')" class="p-2 rounded bg-surface-container-low border border-border-slate hover:border-primary-container text-left flex items-center gap-1.5 text-[10px]">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#c81822] shrink-0"></span><span>Crimson</span>
+                </button>
+                <button onclick="applyColorway('#0053db', '#ffffff', '#00e5ff', '#0053db', '#ffffff', '#ffffff')" class="p-2 rounded bg-surface-container-low border border-border-slate hover:border-primary-container text-left flex items-center gap-1.5 text-[10px]">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#0053db] shrink-0"></span><span>Royal</span>
+                </button>
+                <button onclick="applyColorway('#181d26', '#334155', '#00e5ff', '#181d26', '#334155', '#ffffff')" class="p-2 rounded bg-surface-container-low border border-border-slate hover:border-primary-container text-left flex items-center gap-1.5 text-[10px]">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#181d26] shrink-0 border border-white/20"></span><span>Obsidian</span>
+                </button>
+                <button onclick="applyColorway('#ffffff', '#00e5ff', '#0053db', '#00e5ff', '#0053db', '#0a0e14')" class="p-2 rounded bg-surface-container-low border border-border-slate hover:border-primary-container text-left flex items-center gap-1.5 text-[10px]">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#ffffff] shrink-0"></span><span>White</span>
+                </button>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 pt-2 border-t border-border-slate/60 text-xs">
+                <div class="flex flex-col gap-1">
+                  <label class="text-[11px] uppercase text-text-muted">Main Body</label>
+                  <div class="flex items-center gap-2">
+                    <input type="color" id="pickerPrimary" value="#00e5ff" onchange="updateColors()" class="w-8 h-8 rounded cursor-pointer bg-transparent border-0"/>
+                    <span id="labelPrimary" class="text-pure-white">#00E5FF</span>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-[11px] uppercase text-text-muted">Sleeves</label>
+                  <div class="flex items-center gap-2">
+                    <input type="color" id="pickerSleeve" value="#0a0e14" onchange="updateColors()" class="w-8 h-8 rounded cursor-pointer bg-transparent border-0"/>
+                    <span id="labelSleeve" class="text-pure-white">#0A0E14</span>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-[11px] uppercase text-text-muted">Collar & Trim</label>
+                  <div class="flex items-center gap-2">
+                    <input type="color" id="pickerCollar" value="#ffffff" onchange="updateColors()" class="w-8 h-8 rounded cursor-pointer bg-transparent border-0"/>
+                    <span id="labelCollar" class="text-pure-white">#FFFFFF</span>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-[11px] uppercase text-text-muted">Side Panels</label>
+                  <div class="flex items-center gap-2">
+                    <input type="color" id="pickerSide" value="#00e5ff" onchange="updateColors()" class="w-8 h-8 rounded cursor-pointer bg-transparent border-0"/>
+                    <span id="labelSide" class="text-pure-white">#00E5FF</span>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-[11px] uppercase text-text-muted">Cuff & Hem</label>
+                  <div class="flex items-center gap-2">
+                    <input type="color" id="pickerCuff" value="#ffffff" onchange="updateColors()" class="w-8 h-8 rounded cursor-pointer bg-transparent border-0"/>
+                    <span id="labelCuff" class="text-pure-white">#FFFFFF</span>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-[11px] uppercase text-text-muted">Numbers & Names</label>
+                  <div class="flex items-center gap-2">
+                    <input type="color" id="pickerText" value="#cdff13" onchange="updateColors()" class="w-8 h-8 rounded cursor-pointer bg-transparent border-0"/>
+                    <span id="labelText" class="text-pure-white">#CDFF13</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 3: GRAPHIC PATTERNS -->
+            <div id="tabContent-pattern" class="tab-pane hidden flex flex-col gap-4">
+              <span class="text-xs uppercase tracking-wider text-primary-container font-bold">Sublimation Graphic Styles</span>
+              <div class="grid grid-cols-2 gap-2.5">
+                <button onclick="setPattern('solid')" id="patBtn-solid" class="pat-choice p-3 rounded-lg bg-surface-slate border border-primary-container text-left flex flex-col gap-1">
+                  <span class="font-headline text-sm uppercase text-pure-white font-semibold">Solid Apex</span>
+                  <span class="text-[10px] text-text-muted">Clean Minimalist Finish</span>
+                </button>
+                <button onclick="setPattern('stripes')" id="patBtn-stripes" class="pat-choice p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex flex-col gap-1 hover:border-primary-container">
+                  <span class="font-headline text-sm uppercase text-pure-white font-semibold">Velocity Stripes</span>
+                  <span class="text-[10px] text-text-muted">Dual Vertical Speed Lines</span>
+                </button>
+                <button onclick="setPattern('chevron')" id="patBtn-chevron" class="pat-choice p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex flex-col gap-1 hover:border-primary-container">
+                  <span class="font-headline text-sm uppercase text-pure-white font-semibold">Chevron Peak</span>
+                  <span class="text-[10px] text-text-muted">Dynamic V-Wing Insignia</span>
+                </button>
+                <button onclick="setPattern('hex')" id="patBtn-hex" class="pat-choice p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex flex-col gap-1 hover:border-primary-container">
+                  <span class="font-headline text-sm uppercase text-pure-white font-semibold">Carbon Hex Grid</span>
+                  <span class="text-[10px] text-text-muted">Honeycomb Technical Matrix</span>
+                </button>
+                <button onclick="setPattern('gradient')" id="patBtn-gradient" class="pat-choice p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex flex-col gap-1 hover:border-primary-container">
+                  <span class="font-headline text-sm uppercase text-pure-white font-semibold">Gradient Ombre</span>
+                  <span class="text-[10px] text-text-muted">Vertical Tonal Fade</span>
+                </button>
+                <button onclick="setPattern('camo')" id="patBtn-camo" class="pat-choice p-3 rounded-lg bg-surface-container-low border border-border-slate text-left flex flex-col gap-1 hover:border-primary-container">
+                  <span class="font-headline text-sm uppercase text-pure-white font-semibold">Digital Camo</span>
+                  <span class="text-[10px] text-text-muted">Geometric Athletic Camo</span>
+                </button>
+              </div>
+
+              <div class="pt-2 border-t border-border-slate/60">
+                <label class="text-[11px] uppercase text-text-muted block mb-1.5">Custom Uploaded Artwork Sublimation Wrap</label>
+                <div class="p-3 rounded border border-dashed border-border-slate hover:border-primary-container text-center cursor-pointer transition-colors" onclick="document.getElementById('artworkUploadInput').click()">
+                  <span class="material-symbols-outlined text-primary-container text-lg">image</span>
+                  <span id="artworkLabelText" class="text-xs text-text-muted block mt-1">Click to upload full-body sublimation graphic</span>
+                  <input type="file" id="artworkUploadInput" accept="image/*" class="hidden" onchange="handleArtworkUpload(event)"/>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 4: IDENTITY (CRESTS, NAMES, NUMBERS, SPONSOR) -->
+            <div id="tabContent-identity" class="tab-pane hidden flex flex-col gap-4">
+              <span class="text-xs uppercase tracking-wider text-primary-container font-bold">Player, Team & Crest Customization</span>
+              
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-1">
+                  <div class="flex items-center justify-between">
+                    <label class="text-[11px] uppercase text-text-muted">Chest Sponsor / Team Name</label>
+                    <label class="inline-flex items-center gap-1.5 text-[10px] text-text-dim cursor-pointer">
+                      <input type="checkbox" id="sponsorToggle" checked onchange="toggleSponsorVisibility(this.checked)" class="accent-primary-container"/>
+                      <span>Display</span>
+                    </label>
+                  </div>
+                  <input type="text" id="inputTeamName" value="GORSY APEX" maxlength="18" oninput="updateIdentity()" class="w-full px-3 py-2 rounded bg-surface-container-lowest text-pure-white text-xs border border-border-slate focus:border-primary-container focus:outline-none"/>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="flex flex-col gap-1">
+                    <label class="text-[11px] uppercase text-text-muted">Player Back Name</label>
+                    <input type="text" id="inputPlayerName" value="SALEEM" maxlength="12" oninput="updateIdentity()" class="w-full px-3 py-2 rounded bg-surface-container-lowest text-pure-white text-xs border border-border-slate focus:border-primary-container focus:outline-none"/>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label class="text-[11px] uppercase text-text-muted">Jersey Number</label>
+                    <input type="text" id="inputPlayerNumber" value="10" maxlength="3" oninput="updateIdentity()" class="w-full px-3 py-2 rounded bg-surface-container-lowest text-pure-white font-headline text-base border border-border-slate focus:border-primary-container focus:outline-none"/>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                  <label class="text-[11px] uppercase text-text-muted">Front Crest Placement</label>
+                  <div class="grid grid-cols-3 gap-2">
+                    <button onclick="setLogoPlacement('left')" id="placeBtn-left" class="placement-btn p-2 rounded bg-surface-slate border border-primary-container text-center text-[10px] text-pure-white">Left Breast</button>
+                    <button onclick="setLogoPlacement('center')" id="placeBtn-center" class="placement-btn p-2 rounded bg-surface-container-low border border-border-slate text-center text-[10px] text-text-muted hover:border-primary-container">Center</button>
+                    <button onclick="setLogoPlacement('off')" id="placeBtn-off" class="placement-btn p-2 rounded bg-surface-container-low border border-border-slate text-center text-[10px] text-text-muted hover:border-primary-container">Off</button>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-1.5 pt-1">
+                  <label class="text-[11px] uppercase text-text-muted">Team Crest Insignia</label>
+                  <div class="grid grid-cols-4 gap-2">
+                    <button onclick="setCrestBadge('shield')" id="crestBtn-shield" class="crest-choice p-2 rounded bg-surface-slate border border-primary-container flex flex-col items-center gap-1">
+                      <span class="material-symbols-outlined text-primary-container text-xl">shield</span>
+                      <span class="text-[9px] uppercase text-pure-white">Shield</span>
+                    </button>
+                    <button onclick="setCrestBadge('falcon')" id="crestBtn-falcon" class="crest-choice p-2 rounded bg-surface-container-low border border-border-slate hover:border-primary-container flex flex-col items-center gap-1">
+                      <span class="material-symbols-outlined text-text-muted text-xl">flutter_dash</span>
+                      <span class="text-[9px] uppercase text-pure-white">Falcon</span>
+                    </button>
+                    <button onclick="setCrestBadge('star')" id="crestBtn-star" class="crest-choice p-2 rounded bg-surface-container-low border border-border-slate hover:border-primary-container flex flex-col items-center gap-1">
+                      <span class="material-symbols-outlined text-text-muted text-xl">star</span>
+                      <span class="text-[9px] uppercase text-pure-white">Star</span>
+                    </button>
+                    <button onclick="setCrestBadge('bolt')" id="crestBtn-bolt" class="crest-choice p-2 rounded bg-surface-container-low border border-border-slate hover:border-primary-container flex flex-col items-center gap-1">
+                      <span class="material-symbols-outlined text-text-muted text-xl">bolt</span>
+                      <span class="text-[9px] uppercase text-pure-white">Volt</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="pt-2 border-t border-border-slate/60">
+                  <label class="text-[11px] uppercase text-text-muted block mb-1.5">Or Upload Custom Vector Emblem (AI / SVG / PNG)</label>
+                  <div class="p-3 rounded border border-dashed border-border-slate hover:border-primary-container text-center cursor-pointer transition-colors" onclick="document.getElementById('crestUploadInput').click()">
+                    <span class="material-symbols-outlined text-primary-container text-lg">cloud_upload</span>
+                    <span id="uploadLabelText" class="text-xs text-text-muted block mt-1">Click to browse custom team emblem</span>
+                    <input type="file" id="crestUploadInput" accept="image/*" class="hidden" onchange="handleLogoUpload(event)"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 5: B2B VOLUME & PRODUCT SPECIFICATION SUMMARY -->
+            <div id="tabContent-pricing" class="tab-pane hidden flex flex-col gap-4">
+              <span class="text-xs uppercase tracking-wider text-primary-container font-bold">Product Specification Summary & Quote</span>
+
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs uppercase text-text-muted">Order Volume Quantity</span>
+                  <span id="sliderPcsDisplay" class="font-headline text-base text-primary-container font-bold">250 Pcs</span>
+                </div>
+                <input type="range" id="orderPcsSlider" min="50" max="5000" step="50" value="250" oninput="calculatePricing(this.value)" class="w-full h-2 rounded bg-surface-container-low accent-primary-container cursor-pointer"/>
+              </div>
+
+              <!-- Full Specification Summary Box -->
+              <div class="p-3.5 rounded-lg bg-surface-container-lowest border border-border-slate/60 flex flex-col gap-2 text-xs">
+                <div class="flex justify-between items-center text-text-muted">
+                  <span>Garment:</span><span id="summaryGarment" class="text-pure-white font-semibold">Pro Soccer Jersey</span>
+                </div>
+                <div class="flex justify-between items-center text-text-muted">
+                  <span>Fabric Spec:</span><span id="summaryFabric" class="text-primary-container font-semibold">160 GSM AeroPoly Interlock</span>
+                </div>
+                <div class="flex justify-between items-center text-text-muted">
+                  <span>Colorway:</span><span id="summaryColors" class="text-pure-white font-mono text-[10px]">#00E5FF / #0A0E14</span>
+                </div>
+                <div class="flex justify-between items-center text-text-muted">
+                  <span>Graphic Pattern:</span><span id="summaryPattern" class="text-tertiary font-semibold uppercase">Solid Apex</span>
+                </div>
+                <div class="flex justify-between items-center text-text-muted">
+                  <span>Branding & Identity:</span><span id="summaryIdentity" class="text-pure-white truncate max-w-[170px]">GORSY APEX (#10 SALEEM)</span>
+                </div>
+                <div class="h-px bg-border-slate my-0.5"></div>
+                <div class="flex justify-between text-text-muted">
+                  <span>Unit Tier Price:</span><span id="calcUnitPrice" class="text-pure-white font-semibold">$11.80 / Pc</span>
+                </div>
+                <div class="flex justify-between text-sm font-bold text-pure-white">
+                  <span>Total Estimated Batch:</span><span id="calcTotalBatch" class="text-primary-container">$2,950.00</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <button onclick="requestQuoteFrom3D()" class="w-full py-3.5 rounded bg-primary-container text-on-primary-container text-xs uppercase font-bold shadow-[0_0_16px_rgba(0,229,255,0.4)] hover:bg-primary transition-all flex items-center justify-center gap-2">
+                  <span class="material-symbols-outlined text-sm">send</span>
+                  <span>Inquire This 3D Build Directly</span>
+                </button>
+                <button onclick="generateTechPackPDF()" class="w-full py-2.5 rounded bg-surface-slate text-pure-white border border-border-slate text-xs uppercase hover:text-primary-container transition-all flex items-center justify-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm">description</span>
+                  <span>Download Spec Sheet (JSON Tech Pack)</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="w-full bg-surface-container-lowest border-t border-surface-slate/80 text-on-surface py-12 text-center font-mono text-xs text-text-dim">
+  © 2026 GORSY (PVT) LTD • 3D WEBGL STUDIO • SIALKOT, PAKISTAN
+</footer>
+
+<div id="currencyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="w-full max-w-md p-6 rounded-2xl bg-surface-midnight border border-border-slate font-mono text-xs">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="font-headline text-lg text-pure-white uppercase font-bold">Select Currency</h3>
+      <button onclick="closeModal('currencyModal')"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <button onclick="setCurrency('USD', '$', 1.0)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>USD ($)</span><span class="text-primary-container font-bold">$</span></button>
+      <button onclick="setCurrency('EUR', '€', 0.92)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>EUR (€)</span><span class="text-primary-container font-bold">€</span></button>
+      <button onclick="setCurrency('GBP', '£', 0.79)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>GBP (£)</span><span class="text-primary-container font-bold">£</span></button>
+      <button onclick="setCurrency('AED', 'AED ', 3.67)" class="p-2.5 rounded bg-surface-slate text-left flex justify-between"><span>AED</span><span class="text-primary-container font-bold">AED</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+<script src="form-handler.js"></script>
+<script src="customizer_script.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(initThreeCustomizer, 100);
+  });
+</script>
+</body>
+</html>
